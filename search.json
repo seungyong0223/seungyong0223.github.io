@@ -1,73 +1,38 @@
 [
   {
+    "objectID": "notes/StatTheory/index.html",
+    "href": "notes/StatTheory/index.html",
+    "title": "Statistical Theory",
+    "section": "",
+    "text": "\\(\n\\newcommand{\\E}{\\mathbb{E}}\n\\newcommand{\\Var}{\\operatorname{Var}}\n\\newcommand{\\Cov}{\\operatorname{Cov}}\n\\newcommand{\\argmax}{\\operatorname*{arg\\,max}}\n\\newcommand{\\argmin}{\\operatorname*{arg\\,min}}\n\\newcommand{\\iid}{\\overset{\\text{iid}}{\\sim}}\n\\)\n\n\n\n\n\nNotes on statistical inference: sufficiency, estimation, hypothesis testing, and asymptotics.",
+    "crumbs": [
+      "Notes",
+      "Statistical Theory"
+    ]
+  },
+  {
     "objectID": "notes/index.html",
     "href": "notes/index.html",
     "title": "Notes",
     "section": "",
-    "text": "Date\nTitle\nCategories\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
-    "section": "",
-    "text": "Coming soon."
-  },
-  {
-    "objectID": "publications.html#journal-articles",
-    "href": "publications.html#journal-articles",
-    "title": "Publications",
-    "section": "",
-    "text": "Coming soon."
-  },
-  {
-    "objectID": "publications.html#conference-presentations",
-    "href": "publications.html#conference-presentations",
-    "title": "Publications",
-    "section": "Conference Presentations",
-    "text": "Conference Presentations\nComing soon."
-  },
-  {
-    "objectID": "publications.html#preprints",
-    "href": "publications.html#preprints",
-    "title": "Publications",
-    "section": "Preprints",
-    "text": "Preprints\nComing soon."
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "No matching items"
-  },
-  {
-    "objectID": "labs/index.html",
-    "href": "labs/index.html",
-    "title": "Labs",
-    "section": "",
-    "text": "Date\nTitle\nCategories\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "SeungYong Oh",
-    "section": "",
-    "text": "No matching items"
+    "text": "\\(\n\\newcommand{\\E}{\\mathbb{E}}\n\\newcommand{\\Var}{\\operatorname{Var}}\n\\newcommand{\\Cov}{\\operatorname{Cov}}\n\\newcommand{\\argmax}{\\operatorname*{arg\\,max}}\n\\newcommand{\\argmin}{\\operatorname*{arg\\,min}}\n\\newcommand{\\iid}{\\overset{\\text{iid}}{\\sim}}\n\\)\n\n\n\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nCategories\n\n\n\n\n\n\n\n\nNov 22, 2026\n\n\nIntroduction\n\n\nStatistical Theory\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Notes"
+    ]
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "SeungYong Oh",
     "section": "",
-    "text": "I am a veterinarian and Ph.D. student at Seoul National University, working at the intersection of statistics and biomedicine. My current research focuses on single-nucleus RNA sequencing analysis in a mouse model of hepatocellular carcinoma (HCC)."
+    "text": "I am a veterinarian and Ph.D. student at Seoul National University, working at the intersection of statistics and biomedicine. My current research focuses on single-nucleus RNA sequencing data analysis in a mouse model of hepatocellular carcinoma (HCC)."
   },
   {
     "objectID": "about.html#research-interests",
     "href": "about.html#research-interests",
     "title": "SeungYong Oh",
     "section": "Research Interests",
-    "text": "Research Interests\n\nStatistical genomics and single-cell transcriptomics\nMachine learning and causal inference for biomedical data\nMulti-modal data integration for precision medicine"
+    "text": "Research Interests\n\nCausal inference in biomedical data\nSingle-cell Transcriptomics\nTargeted learning and semiparametric inference"
   },
   {
     "objectID": "about.html#education",
@@ -89,5 +54,106 @@
     "title": "SeungYong Oh",
     "section": "Coursework",
     "text": "Coursework\n\nTheory: Statistical Theory, Probability Theory, Real and Multivariate Analysis\nMethods: Machine Learning and Deep Learning for Data Science, Statistical Machine Learning, Statistical Computing\nApplications: Biostatistics, Genomic and Clinical Data Analysis, Clinical Genomic Medicine, Causal Inference"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "SeungYong Oh",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "labs/index.html",
+    "href": "labs/index.html",
+    "title": "Labs",
+    "section": "",
+    "text": "Date\nTitle\nCategories\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "In preparation."
+  },
+  {
+    "objectID": "publications.html#journal-articles",
+    "href": "publications.html#journal-articles",
+    "title": "Publications",
+    "section": "",
+    "text": "In preparation."
+  },
+  {
+    "objectID": "publications.html#conference-presentations",
+    "href": "publications.html#conference-presentations",
+    "title": "Publications",
+    "section": "Conference Presentations",
+    "text": "Conference Presentations\n\nMASH diet and CCl4 interact to reshape ER protein processing in hepatocytes of an HCC mouse model\nS. Y. Oh, H. Kim, D. Park, K.-J. Oh, J. K. Seong\n35th International KOGO Annual Conference, Sep 2026 · Poster"
+  },
+  {
+    "objectID": "notes/ProbTheory/index.html",
+    "href": "notes/ProbTheory/index.html",
+    "title": "Probability Theory",
+    "section": "",
+    "text": "\\(\n\\newcommand{\\E}{\\mathbb{E}}\n\\newcommand{\\Var}{\\operatorname{Var}}\n\\newcommand{\\Cov}{\\operatorname{Cov}}\n\\newcommand{\\argmax}{\\operatorname*{arg\\,max}}\n\\newcommand{\\argmin}{\\operatorname*{arg\\,min}}\n\\newcommand{\\iid}{\\overset{\\text{iid}}{\\sim}}\n\\)\n\n\n\n\n\nNotes on measure-theoretic probability: probability spaces, random variables, expectation, and limit theorems.",
+    "crumbs": [
+      "Notes",
+      "Probability Theory"
+    ]
+  },
+  {
+    "objectID": "notes/StatTheory/00-intro.html",
+    "href": "notes/StatTheory/00-intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "\\(\n\\newcommand{\\E}{\\mathbb{E}}\n\\newcommand{\\Var}{\\operatorname{Var}}\n\\newcommand{\\Cov}{\\operatorname{Cov}}\n\\newcommand{\\argmax}{\\operatorname*{arg\\,max}}\n\\newcommand{\\argmin}{\\operatorname*{arg\\,min}}\n\\newcommand{\\iid}{\\overset{\\text{iid}}{\\sim}}\n\\)",
+    "crumbs": [
+      "Notes",
+      "Statistical Theory",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "notes/StatTheory/00-intro.html#overview",
+    "href": "notes/StatTheory/00-intro.html#overview",
+    "title": "Introduction",
+    "section": "Overview",
+    "text": "Overview\nWhat this note covers.",
+    "crumbs": [
+      "Notes",
+      "Statistical Theory",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "notes/StatTheory/00-intro.html#definitions-and-theorems",
+    "href": "notes/StatTheory/00-intro.html#definitions-and-theorems",
+    "title": "Introduction",
+    "section": "Definitions and Theorems",
+    "text": "Definitions and Theorems",
+    "crumbs": [
+      "Notes",
+      "Statistical Theory",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "notes/StatTheory/00-intro.html#references",
+    "href": "notes/StatTheory/00-intro.html#references",
+    "title": "Introduction",
+    "section": "References",
+    "text": "References",
+    "crumbs": [
+      "Notes",
+      "Statistical Theory",
+      "Introduction"
+    ]
   }
 ]

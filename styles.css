@@ -1,1 +1,6 @@
 /* css styles */
+
+/* body-classes: hide-title 이 지정된 페이지(Notes, Labs 목록)는 제목 영역을 숨김 */
+body.hide-title #title-block-header {
+  display: none;
+}
