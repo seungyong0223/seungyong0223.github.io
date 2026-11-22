@@ -1,7 +1,7 @@
 ---
 title: "SeungYong Oh"
-subtitle: "Position · Affiliation"   # 소속 / 직함 입력
-# image: profile.jpg            # 사진을 프로젝트 루트에 profile.jpg로 넣은 뒤 주석 해제
+subtitle: "DVM, PhD Student · Seoul National University"
+image: profile.jpg
 toc: false
 about:
   template: trestles
@@ -11,9 +11,12 @@ about:
     - icon: github
       text: GitHub
       href: https://github.com/seungyong0223
-    # - icon: envelope
-    #   text: Email
-    #   href: mailto:you@example.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/seung-yong-oh-3a3118313/
+    - icon: envelope
+      text: Email
+      href: mailto:seungyong0223@snu.ac.kr
     # - icon: mortarboard-fill
     #   text: Google Scholar
     #   href: https://scholar.google.com/citations?user=...
@@ -22,23 +25,27 @@ about:
     #   href: files/cv.pdf
 ---
 
-## Bio
+I am a veterinarian and Ph.D. student at Seoul National University, working at the
+intersection of statistics and biomedicine. My current research focuses on
+single-nucleus RNA sequencing analysis in a mouse model of hepatocellular carcinoma (HCC).
 
-A short introduction about yourself.
+## Research Interests
 
-:::: {.columns}
+- Statistical genomics and single-cell transcriptomics
+- Machine learning and causal inference for biomedical data
+- Multi-modal data integration for precision medicine
 
-::: {.column width="50%"}
 ## Education
 
-- **Degree**, Major · University · Year
-:::
+- **Ph.D. student**, Veterinary Medicine · Seoul National University · 2024 – present
+- **DVM**, Veterinary Medicine · Seoul National University · 2014 – 2021
 
-::: {.column width="50%"}
-## Interests
+## Experience
 
-- Biostatistics
-- Probability & Statistical Inference
-:::
+- **Veterinary Officer**, Republic of Korea Air Force · 2021 – 2024
 
-::::
+## Coursework
+
+- **Theory:** Statistical Theory, Probability Theory, Real and Multivariate Analysis
+- **Methods:** Machine Learning and Deep Learning for Data Science, Statistical Machine Learning, Statistical Computing
+- **Applications:** Biostatistics, Genomic and Clinical Data Analysis, Clinical Genomic Medicine, Causal Inference
