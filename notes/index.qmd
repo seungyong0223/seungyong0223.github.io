@@ -1,8 +1,11 @@
 ---
 title: "Notes"
 description: "Study notes on statistics, probability theory, and biostatistics"
+body-classes: hide-title     # 제목 영역 숨김 (styles.css). title은 브라우저 탭·검색용으로 유지
 listing:
-  contents: "*.qmd"          # 이 폴더 안의 노트를 자동 수집
+  contents:                  # 과목 폴더 안의 노트를 자동 수집
+    - "*/*.qmd"
+    - "!*/index.qmd"         # 과목 개요 페이지는 목록에서 제외
   type: table                # 표 형태: 날짜 · 제목 · 카테고리
   sort: "date desc"
   categories: true           # 오른쪽 카테고리 필터

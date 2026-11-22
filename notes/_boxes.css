@@ -1,0 +1,50 @@
+/*
+  notes/ 전용 블록 모양 (LaTeX의 \theoremstyle 역할)
+  - notes/_metadata.yml 의 css 로 노트 페이지에만 적용
+  - 색만 바꾸려면 아래 변수 값만 수정하면 됨
+  - 배경은 각 색을 옅게 섞어서 만들기 때문에 라이트/다크 모드 모두 자연스럽게 보임
+*/
+:root {
+  --box-definition: #2c7be5;   /* 파랑 */
+  --box-theorem:    #6f42c1;   /* 보라 */
+  --box-lemma:      #6f42c1;   /* 보라 (Theorem과 같은 계열) */
+  --box-corollary:  #6f42c1;   /* 보라 */
+  --box-example:    #198754;   /* 초록 */
+  --box-remark:     #fd7e14;   /* 주황 */
+  --box-proof:      #adb5bd;   /* 회색 */
+}
+
+/* ---------- 공통: 박스형 블록 (Definition, Theorem, Lemma, Corollary, Example, Remark) ---------- */
+.theorem,
+.proof.remark {
+  --c: var(--box-theorem);                                     /* 기본색 = Theorem */
+  border-left: 4px solid var(--c);
+  background: color-mix(in srgb, var(--c) 8%, transparent);   /* 옅은 배경 */
+  border-radius: 4px;
+  padding: 0.75em 1em;
+  margin: 1.25em 0;
+}
+.theorem > p:last-child,
+.proof > p:last-child { margin-bottom: 0; }
+
+/* 블록 제목 ("Theorem 1 (Name)") 색 */
+.theorem .theorem-title,
+.proof.remark .proof-title { color: var(--c); }
+
+/* ---------- 종류별 색 지정 ---------- */
+.theorem.definition { --c: var(--box-definition); }
+.theorem.lemma      { --c: var(--box-lemma); }
+.theorem.corollary  { --c: var(--box-corollary); }
+.theorem.example    { --c: var(--box-example); }
+.proof.remark       { --c: var(--box-remark); }
+
+/* ---------- Proof: 박스 없이 왼쪽 얇은 선 + 끝에 ∎ ---------- */
+.proof:not(.remark) {
+  border-left: 2px solid var(--box-proof);
+  padding: 0.25em 1em;
+  margin: 1em 0 1.5em;
+}
+.proof:not(.remark) > p:last-child::after {
+  content: "∎";
+  float: right;
+}

@@ -1,0 +1,9 @@
+---
+title: "Statistical Theory"
+description: "Overview of the Statistical Theory notes"
+toc: false
+---
+
+Notes on statistical inference: sufficiency, estimation, hypothesis testing, and asymptotics.
+
+<!-- 이 과목의 노트 목록은 왼쪽 사이드바에 자동으로 표시됨 -->

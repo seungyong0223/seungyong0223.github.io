@@ -1,0 +1,16 @@
+<!--
+  notes/ 전용 수식 매크로 (LaTeX preamble의 \newcommand 역할)
+  - notes/_metadata.yml 의 include-before-body 로 모든 노트에 자동 적용
+  - 추가: 아래 \( ... \) 안에 \newcommand 한 줄씩 추가
+  - 인자 있는 매크로 예: \newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+-->
+<div style="display: none">
+\(
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\Cov}{\operatorname{Cov}}
+\newcommand{\argmax}{\operatorname*{arg\,max}}
+\newcommand{\argmin}{\operatorname*{arg\,min}}
+\newcommand{\iid}{\overset{\text{iid}}{\sim}}
+\)
+</div>

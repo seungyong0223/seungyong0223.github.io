@@ -1,0 +1,77 @@
+---
+# 한국어로 쓰는 노트라면 아래에 lang: ko 추가 → "정리 1", "증명" 등으로 표시
+title: "Introduction"
+description: "description"
+date: 2026-11-22
+# 과목 카테고리는 폴더의 _metadata.yml이 자동으로 붙임 (StatTheory → Statistical Theory)
+# 세부 주제 태그가 필요할 때만 주석 해제 → 과목 카테고리에 추가로 붙음
+# categories: [Statistical Theory]
+# draft: true 
+---
+
+## Overview
+
+What this note covers.
+
+<!--
+블록 양식 (번호·참조 있음: #접두어-이름 / 번호 없음: .클래스)
+  Definition  ::: {#def-이름}    참조 @def-이름
+  Theorem     ::: {#thm-이름}    참조 @thm-이름
+  Lemma       ::: {#lem-이름}    참조 @lem-이름
+  Corollary   ::: {#cor-이름}    참조 @cor-이름
+  Example     ::: {#exm-이름}    참조 @exm-이름
+  Remark      ::: {.remark}
+  Proof       ::: {.proof}
+블록 안 첫 줄의 "## 이름"은 괄호 속 이름으로 표시됨 → "Definition 1 (Expectation)"
+수식 매크로: \E \Var \Cov \argmax \argmin \iid  (notes/_macros.html 에서 추가·수정)
+블록 색: notes/_boxes.css 맨 위 변수에서 수정
+-->
+
+## Definitions and Theorems
+
+<!-- 
+::: {#def-expectation}
+## Expectation
+For a random variable $X$ with density $f(x)$, the expectation is defined as
+
+$$
+\E[X] = \int_{-\infty}^{\infty} x f(x)\, dx
+$$ {#eq-expectation}
+:::
+
+::: {#lem-linear-integral}
+For integrable $g, h$ and constants $a, b$,
+$\int (a g + b h) = a \int g + b \int h$.
+:::
+
+::: {#thm-linearity}
+## Linearity of Expectation
+For any constants $a, b$, $\E[aX + b] = a\E[X] + b$.
+:::
+
+::: {.proof}
+Follows from @eq-expectation and @lem-linear-integral.
+:::
+
+::: {#cor-centered}
+$\E[X - \E[X]] = 0$.
+:::
+
+::: {.remark}
+@thm-linearity does not require independence; compare with $\Var(X + Y) = \Var(X) + \Var(Y) + 2\Cov(X, Y)$.
+:::
+
+## Examples
+
+::: {#exm-normal}
+If $X_1, \dots, X_n \iid N(\mu, \sigma^2)$, then $\E[\bar X] = \mu$ and
+$\hat\mu_{\text{MLE}} = \argmax_\mu \ell(\mu) = \bar X$.
+:::
+
+## Related Labs
+
+- [Lab: Title](../../labs/lab-name.qmd) -->
+
+## References
+
+- 

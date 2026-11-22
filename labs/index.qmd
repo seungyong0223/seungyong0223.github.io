@@ -1,6 +1,7 @@
 ---
 title: "Labs"
 description: "Hands-on code companions to the Notes"
+body-classes: hide-title     # 제목 영역 숨김 (styles.css). title은 브라우저 탭·검색용으로 유지
 listing:
   contents: "*.qmd"          # 이 폴더 안의 실습 글을 자동 수집
   type: table

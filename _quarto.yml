@@ -33,6 +33,20 @@ website:
   page-footer:
     left: "© 2026 SeungYong Oh"
     right: "Built with [Quarto](https://quarto.org)"
+  
+  # Notes 전용 사이드바: 여기 포함된 페이지에서만 표시됨
+  # 새 과목 폴더를 만들면 아래에 section 하나 추가
+  sidebar:
+    - id: notes
+      title: "Notes"
+      style: docked
+      collapse-level: 1       # 과목별로 접힌 상태로 시작
+      contents:
+        - notes/index.qmd
+        - section: "Statistical Theory"
+          contents: "notes/StatTheory/*"
+        - section: "Probability Theory"
+          contents: "notes/ProbTheory/*"
 
 format:
   html:

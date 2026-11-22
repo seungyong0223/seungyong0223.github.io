@@ -1,24 +1,30 @@
 ---
 title: "Publications"
-toc: false
+toc: false 
 ---
 
 ## Journal Articles
 
+*In preparation.*
+
 <!--
-작성 예시 (복사해서 사용):
+Format
 
 1. **Oh, S.**, Coauthor, A., & Coauthor, B. (2027).
    Title of the paper. *Journal Name*, 12(3), 45–67.
    [[DOI](https://doi.org/...)] [[PDF](files/paper.pdf)] [[Code](https://github.com/...)]
 -->
 
-*Coming soon.*
 
 ## Conference Presentations
 
-*Coming soon.*
+- **MASH diet and CCl4 interact to reshape ER protein processing in hepatocytes of an HCC mouse model**\
+  **S. Y. Oh**, H. Kim, D. Park, K.-J. Oh, J. K. Seong\
+  *35th International KOGO Annual Conference*, Sep 2026 · Poster
 
+
+
+<!-- 
 ## Preprints
 
-*Coming soon.*
+*Coming soon.* -->

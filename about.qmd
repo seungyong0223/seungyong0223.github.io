@@ -4,9 +4,9 @@ subtitle: "DVM, PhD Student · Seoul National University"
 image: profile.jpg
 toc: false
 about:
-  template: trestles
+  template: solana
   image-shape: round
-  image-width: 15em
+  image-width: 10em
   links:
     - icon: github
       text: GitHub
@@ -25,15 +25,13 @@ about:
     #   href: files/cv.pdf
 ---
 
-I am a veterinarian and Ph.D. student at Seoul National University, working at the
-intersection of statistics and biomedicine. My current research focuses on
-single-nucleus RNA sequencing analysis in a mouse model of hepatocellular carcinoma (HCC).
+I am a veterinarian and Ph.D. student at Seoul National University, working at the intersection of statistics and biomedicine. My current research focuses on single-nucleus RNA sequencing data analysis in a mouse model of hepatocellular carcinoma (HCC).
 
 ## Research Interests
 
-- Statistical genomics and single-cell transcriptomics
-- Machine learning and causal inference for biomedical data
-- Multi-modal data integration for precision medicine
+- Causal inference in biomedical data 
+- Single-cell Transcriptomics
+- Targeted learning and semiparametric inference 
 
 ## Education
 
@@ -46,6 +44,6 @@ single-nucleus RNA sequencing analysis in a mouse model of hepatocellular carcin
 
 ## Coursework
 
-- **Theory:** Statistical Theory, Probability Theory, Real and Multivariate Analysis
-- **Methods:** Machine Learning and Deep Learning for Data Science, Statistical Machine Learning, Statistical Computing
-- **Applications:** Biostatistics, Genomic and Clinical Data Analysis, Clinical Genomic Medicine, Causal Inference
+1. **Theory:** Statistical Theory, Probability Theory, Real and Multivariate Analysis
+2. **Methods:** Machine Learning and Deep Learning for Data Science, Statistical Machine Learning, Statistical Computing
+3. **Applications:** Biostatistics, Genomic and Clinical Data Analysis, Clinical Genomic Medicine, Causal Inference
