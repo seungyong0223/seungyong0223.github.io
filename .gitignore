@@ -1,1 +1,27 @@
+# Quarto
 /.quarto/
+/_site/
+
+# macOS
+.DS_Store
+
+# R
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+renv/library/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+
+# VS Code
+.vscode/
+
+# Secrets / data (never commit)
+.env
+*.key
+data/raw/
