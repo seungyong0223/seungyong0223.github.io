@@ -1,0 +1,5 @@
+# projects/ 폴더의 모든 프로젝트 글에 적용되는 기본 설정
+author: "SeungYong Oh"
+toc: true
+page-layout: article
+fig-cap-location: bottom

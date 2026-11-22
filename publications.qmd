@@ -1,0 +1,24 @@
+---
+title: "Publications"
+toc: false
+---
+
+## Journal Articles
+
+<!--
+작성 예시 (복사해서 사용):
+
+1. **Oh, S.**, Coauthor, A., & Coauthor, B. (2027).
+   Title of the paper. *Journal Name*, 12(3), 45–67.
+   [[DOI](https://doi.org/...)] [[PDF](files/paper.pdf)] [[Code](https://github.com/...)]
+-->
+
+*Coming soon.*
+
+## Conference Presentations
+
+*Coming soon.*
+
+## Preprints
+
+*Coming soon.*

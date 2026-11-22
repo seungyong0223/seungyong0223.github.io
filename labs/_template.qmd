@@ -1,0 +1,54 @@
+---
+# 새 실습: 이 파일을 복사해 labs/<lab-name>.qmd 로 저장
+# R과 Python을 한 문서에 함께 쓰려면 R의 reticulate 패키지가 필요합니다.
+# 한 언어만 쓰는 실습이면 다른 언어 블록을 지우면 됩니다.
+title: "Lab Title"
+description: "One-line summary of the lab"
+date: 2026-11-22
+categories: [Probability]       # 관련 노트와 같은 카테고리 추천
+draft: true                     # 공개할 때 이 줄 삭제
+---
+
+## Goals
+
+- Related note: [Note Title](../notes/note-name.qmd)
+- Check whether the distribution of the sample mean approaches normality (CLT).
+
+## Simulation
+
+::: {.panel-tabset group="language"}
+
+## R
+
+```{r}
+#| label: fig-clt-r
+#| fig-cap: "Distribution of the sample mean (R)"
+set.seed(2026)
+xbar <- replicate(5000, mean(rexp(30, rate = 1)))
+hist(xbar, breaks = 50, probability = TRUE, main = "", xlab = "sample mean")
+curve(dnorm(x, mean = 1, sd = 1 / sqrt(30)), add = TRUE, lwd = 2)
+```
+
+## Python
+
+```{python}
+#| label: fig-clt-py
+#| fig-cap: "Distribution of the sample mean (Python)"
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy import stats
+
+rng = np.random.default_rng(2026)
+xbar = rng.exponential(1, size=(5000, 30)).mean(axis=1)
+x = np.linspace(xbar.min(), xbar.max(), 200)
+plt.hist(xbar, bins=50, density=True)
+plt.plot(x, stats.norm.pdf(x, 1, 1 / np.sqrt(30)), lw=2)
+plt.xlabel("sample mean")
+plt.show()
+```
+
+:::
+
+## Summary
+
+Interpretation of results and connection to the note.

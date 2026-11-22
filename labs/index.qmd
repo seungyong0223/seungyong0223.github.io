@@ -1,0 +1,13 @@
+---
+title: "Labs"
+description: "Hands-on code companions to the Notes"
+listing:
+  contents: "*.qmd"          # 이 폴더 안의 실습 글을 자동 수집
+  type: table
+  sort: "date desc"
+  categories: true
+  fields: [date, title, categories]
+  filter-ui: true
+  sort-ui: true
+toc: false
+---

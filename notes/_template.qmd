@@ -1,0 +1,49 @@
+---
+# 새 노트: 이 파일을 복사해 notes/<topic>.qmd 로 저장
+# 한국어로 쓰는 노트라면 아래에 lang: ko 추가 → "정리 1", "증명" 등으로 표시
+title: "Note Title"
+description: "One-line summary of the note"
+date: 2026-11-22
+categories: [Probability]       # 예: Probability, Statistics, Biostatistics
+draft: true                     # 공개할 때 이 줄 삭제
+---
+
+## Overview
+
+What this note covers.
+
+## Definitions and Theorems
+
+::: {#def-expectation}
+## Expectation
+For a random variable $X$ with density $f(x)$, the expectation is defined as
+
+$$
+E[X] = \int_{-\infty}^{\infty} x f(x)\, dx
+$$ {#eq-expectation}
+:::
+
+::: {#thm-linearity}
+## Linearity of Expectation
+For any constants $a, b$, $E[aX + b] = aE[X] + b$.
+:::
+
+::: {.proof}
+Follows from @eq-expectation and the linearity of the integral.
+:::
+
+@thm-linearity follows directly from @def-expectation.^[Footnotes appear in the right margin.]
+
+## Examples
+
+::: {#exm-normal}
+If $X \sim N(\mu, \sigma^2)$, then $E[X] = \mu$.
+:::
+
+## Related Labs
+
+- [Lab: Title](../labs/lab-name.qmd)
+
+## References
+
+- Casella, G., & Berger, R. L. (2002). *Statistical Inference* (2nd ed.).

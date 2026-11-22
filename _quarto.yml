@@ -1,21 +1,46 @@
 project:
   type: website
 
+lang: en                  # 사이트 UI 언어. 한국어 글은 그 글 머리말에 lang: ko 추가
+
+execute:
+  freeze: auto            # 코드가 바뀐 글만 다시 실행 (결과는 _freeze/에 저장)
+
 website:
   title: "SeungYong Oh"
+  site-url: https://seungyong0223.github.io
+  open-graph: true        # 링크 공유 시 미리보기
+  twitter-card: true
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About
+      - href: projects/index.qmd
+        text: Projects
+      - href: publications.qmd
+        text: Publications
+      - href: notes/index.qmd
+        text: Notes
+      - href: labs/index.qmd
+        text: Labs
+      # - href: posts/index.qmd
+      #   text: Posts
+    right:
+      - icon: github
+        href: https://github.com/seungyong0223
+  page-footer:
+    left: "© 2026 SeungYong Oh"
+    right: "Built with [Quarto](https://quarto.org)"
 
 format:
   html:
     theme:
-      - cosmo
-      - brand
+      light: flatly       # 밝은 모드
+      dark: darkly        # 어두운 모드 (토글 버튼이 자동 생성됨)
     css: styles.css
-    toc: true
-
-
-
+    toc: true             # 우측 목차
+    code-fold: false      # true면 코드 접기
+    code-copy: true
+    smooth-scroll: true

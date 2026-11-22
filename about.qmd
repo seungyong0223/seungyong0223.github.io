@@ -1,5 +1,44 @@
 ---
-title: "About"
+title: "SeungYong Oh"
+subtitle: "Position · Affiliation"   # 소속 / 직함 입력
+# image: profile.jpg            # 사진을 프로젝트 루트에 profile.jpg로 넣은 뒤 주석 해제
+toc: false
+about:
+  template: trestles
+  image-shape: round
+  image-width: 15em
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/seungyong0223
+    # - icon: envelope
+    #   text: Email
+    #   href: mailto:you@example.com
+    # - icon: mortarboard-fill
+    #   text: Google Scholar
+    #   href: https://scholar.google.com/citations?user=...
+    # - icon: file-earmark-person
+    #   text: CV
+    #   href: files/cv.pdf
 ---
 
-About this site
+## Bio
+
+A short introduction about yourself.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+## Education
+
+- **Degree**, Major · University · Year
+:::
+
+::: {.column width="50%"}
+## Interests
+
+- Biostatistics
+- Probability & Statistical Inference
+:::
+
+::::

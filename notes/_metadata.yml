@@ -1,0 +1,9 @@
+# notes/ 폴더의 모든 노트에 적용되는 기본 설정
+author: "SeungYong Oh"
+toc: true
+toc-depth: 3
+reference-location: margin    # 각주를 본문 옆 여백에 표시
+citation-location: margin
+html-math-method: mathjax     # 수식 렌더링
+# Theorem/Definition/Proof 등 블록 제목은 _quarto.yml의 lang 설정을 따름
+# 한국어로 쓴 노트는 그 글 머리말에 lang: ko 를 넣으면 "정리 1", "증명"으로 표시

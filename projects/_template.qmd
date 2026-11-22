@@ -1,0 +1,30 @@
+---
+# 새 프로젝트: 이 파일을 복사해 projects/<project-name>.qmd 로 저장
+# (프로젝트 그림이 여러 개면 projects/<project-name>/index.qmd 폴더 구조 추천)
+title: "Project Title"
+description: "One- or two-sentence summary of the project."   # 카드에 표시됨
+date: 2026-11-22
+categories: [Biostatistics]
+image: graphical-abstract.png   # 카드 대표 이미지 = graphic abstract
+draft: true                     # 공개할 때 이 줄 삭제
+---
+
+![Graphical abstract](graphical-abstract.png){fig-alt="Overview of the project"}
+
+## Background
+
+Motivation and the problem being addressed.
+
+## Methods
+
+Data and analytical approach.
+
+## Results
+
+Summary of key findings.
+
+## Links
+
+- Paper: [DOI](https://doi.org/...)
+- Code: [GitHub](https://github.com/seungyong0223/...)
+- Slides: [PDF](slides.pdf)

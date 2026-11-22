@@ -1,0 +1,12 @@
+---
+title: "Projects"
+listing:
+  contents: "*.qmd"          # 이 폴더 안의 프로젝트 글을 자동 수집
+  type: grid                 # 카드형: 각 글의 image(graphic abstract) + 제목 + 요약
+  sort: "date desc"
+  categories: true
+  image-height: 200px
+  fields: [image, title, description, categories]
+page-layout: full
+toc: false
+---

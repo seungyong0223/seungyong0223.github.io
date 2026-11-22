@@ -1,0 +1,10 @@
+# labs/ 폴더의 모든 실습 글에 적용되는 기본 설정
+author: "SeungYong Oh"
+toc: true
+execute:
+  freeze: auto        # 코드가 바뀐 글만 다시 실행, 나머지는 _freeze/ 결과 재사용
+  echo: true          # 코드 보이기
+  warning: false      # 경고 메시지 숨기기
+code-fold: show       # 코드 접기 버튼 (기본은 펼친 상태)
+code-tools: true      # 우상단 </> 코드 전체 보기/숨기기
+code-line-numbers: true

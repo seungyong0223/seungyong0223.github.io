@@ -1,0 +1,13 @@
+---
+title: "Notes"
+description: "Study notes on statistics, probability theory, and biostatistics"
+listing:
+  contents: "*.qmd"          # 이 폴더 안의 노트를 자동 수집
+  type: table                # 표 형태: 날짜 · 제목 · 카테고리
+  sort: "date desc"
+  categories: true           # 오른쪽 카테고리 필터
+  fields: [date, title, categories]
+  filter-ui: true            # 검색창
+  sort-ui: true
+toc: false
+---
