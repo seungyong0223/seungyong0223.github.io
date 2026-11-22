@@ -1,0 +1,9 @@
+---
+title: "Posts"
+listing:
+  contents: "*.qmd"          # posts/ 안의 글을 자동 수집
+  sort: "date desc"
+  type: default
+  categories: true
+toc: false
+---

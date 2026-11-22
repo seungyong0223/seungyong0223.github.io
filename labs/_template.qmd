@@ -1,17 +1,19 @@
 ---
-# 새 실습: 이 파일을 복사해 labs/<lab-name>.qmd 로 저장
+# 새 실습: 이 파일을 주제 폴더에 복사해 저장 (예: labs/BioStat/TMLE/01-ate.qmd)
 # R과 Python을 한 문서에 함께 쓰려면 R의 reticulate 패키지가 필요합니다.
 # 한 언어만 쓰는 실습이면 다른 언어 블록을 지우면 됩니다.
 title: "Lab Title"
 description: "One-line summary of the lab"
 date: 2026-11-22
-categories: [Probability]       # 관련 노트와 같은 카테고리 추천
+# 분야·주제 카테고리는 폴더의 _metadata.yml이 자동으로 붙임 (BioStat/TMLE → Biostatistics, TMLE)
+# 세부 태그가 필요할 때만 주석 해제 → 자동 카테고리에 추가로 붙음
+# categories: [Simulation]
 draft: true                     # 공개할 때 이 줄 삭제
 ---
 
 ## Goals
 
-- Related note: [Note Title](../notes/note-name.qmd)
+- Related note: [Note Title](../../../notes/StatTheory/note-name.qmd)
 - Check whether the distribution of the sample mean approaches normality (CLT).
 
 ## Simulation

@@ -13,9 +13,7 @@ website:
   twitter-card: true
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - href: about.qmd
+      - href: index.qmd       # 홈 = 프로필 페이지
         text: About
       - href: projects/index.qmd
         text: Projects
@@ -34,8 +32,8 @@ website:
     left: "© 2026 SeungYong Oh"
     right: "Built with [Quarto](https://quarto.org)"
   
-  # Notes 전용 사이드바: 여기 포함된 페이지에서만 표시됨
-  # 새 과목 폴더를 만들면 아래에 section 하나 추가
+  # 사이드바: 각 사이드바는 contents에 포함된 페이지에서만 표시됨
+  # 새 폴더를 만들면 해당 사이드바에 section 하나 추가
   sidebar:
     - id: notes
       title: "Notes"
@@ -47,6 +45,25 @@ website:
           contents: "notes/StatTheory/*"
         - section: "Probability Theory"
           contents: "notes/ProbTheory/*"
+
+    - id: labs
+      title: "Labs"
+      style: docked
+      collapse-level: 1       # 분야별로 접힌 상태로 시작
+      contents:
+        - labs/index.qmd
+        - section: "Biostatistics"
+          contents:
+            - section: "TMLE"
+              contents: "labs/BioStat/TMLE/*"
+            - section: "DML"
+              contents: "labs/BioStat/DML/*"
+            - section: "Survival"
+              contents: "labs/BioStat/Survival/*"
+        - section: "Bioinformatics"
+          contents:
+            - section: "Single-Cell"
+              contents: "labs/BI/SingleCell/*"
 
 format:
   html:
