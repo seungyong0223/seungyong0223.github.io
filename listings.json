@@ -6,15 +6,15 @@
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/projects/index.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/index.html",
     "items": []
   },
   {
     "listing": "/labs/index.html",
-    "items": []
-  },
-  {
-    "listing": "/projects/index.html",
     "items": []
   }
 ]
