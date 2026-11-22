@@ -60,27 +60,34 @@
     "href": "about.html",
     "title": "SeungYong Oh",
     "section": "",
-    "text": "A short introduction about yourself."
+    "text": "I am a veterinarian and Ph.D. student at Seoul National University, working at the intersection of statistics and biomedicine. My current research focuses on single-nucleus RNA sequencing analysis in a mouse model of hepatocellular carcinoma (HCC)."
   },
   {
-    "objectID": "about.html#bio",
-    "href": "about.html#bio",
+    "objectID": "about.html#research-interests",
+    "href": "about.html#research-interests",
     "title": "SeungYong Oh",
-    "section": "",
-    "text": "A short introduction about yourself."
+    "section": "Research Interests",
+    "text": "Research Interests\n\nStatistical genomics and single-cell transcriptomics\nMachine learning and causal inference for biomedical data\nMulti-modal data integration for precision medicine"
   },
   {
     "objectID": "about.html#education",
     "href": "about.html#education",
     "title": "SeungYong Oh",
     "section": "Education",
-    "text": "Education\n\nDegree, Major · University · Year"
+    "text": "Education\n\nPh.D. student, Veterinary Medicine · Seoul National University · 2024 – present\nDVM, Veterinary Medicine · Seoul National University · 2014 – 2021"
   },
   {
-    "objectID": "about.html#interests",
-    "href": "about.html#interests",
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
     "title": "SeungYong Oh",
-    "section": "Interests",
-    "text": "Interests\n\nBiostatistics\nProbability & Statistical Inference"
+    "section": "Experience",
+    "text": "Experience\n\nVeterinary Officer, Republic of Korea Air Force · 2021 – 2024"
+  },
+  {
+    "objectID": "about.html#coursework",
+    "href": "about.html#coursework",
+    "title": "SeungYong Oh",
+    "section": "Coursework",
+    "text": "Coursework\n\nTheory: Statistical Theory, Probability Theory, Real and Multivariate Analysis\nMethods: Machine Learning and Deep Learning for Data Science, Statistical Machine Learning, Statistical Computing\nApplications: Biostatistics, Genomic and Clinical Data Analysis, Clinical Genomic Medicine, Causal Inference"
   }
 ]
