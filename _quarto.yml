@@ -41,6 +41,8 @@ website:
       collapse-level: 1       # 과목별로 접힌 상태로 시작
       contents:
         - notes/index.qmd
+        - section: "Mathematics"
+          contents: "notes/Math/*"
         - section: "Statistical Theory"
           contents: "notes/StatTheory/*"
         - section: "Probability Theory"

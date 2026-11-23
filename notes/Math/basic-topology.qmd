@@ -1,0 +1,239 @@
+---
+title: "Basic Topology of Metric Spaces"
+description: " "
+date: 2026-11-23
+
+# 과목 카테고리는 폴더의 _metadata.yml이 자동으로 붙임
+# 세부 주제 태그가 필요할 때만 주석 해제 → 과목 카테고리에 추가로 붙음
+# categories: [Probability Theory]
+# draft: true
+---
+
+<!--
+블록 양식 (번호·참조 있음: #접두어-이름 / 번호 없음: .클래스)
+  Definition  ::: {#def-이름}    참조 @def-이름
+  Theorem     ::: {#thm-이름}    참조 @thm-이름
+  Lemma       ::: {#lem-이름}    참조 @lem-이름
+  Corollary   ::: {#cor-이름}    참조 @cor-이름
+  Example     ::: {#exm-이름}    참조 @exm-이름
+  Remark      ::: {.remark}
+  Proof       ::: {.proof}
+블록 안 첫 줄의 "## 이름"은 괄호 속 이름으로 표시됨 → "Definition 1 (Expectation)"
+수식 매크로: \E \Var \Cov \argmax \argmin \iid \coloneqq  (notes/_macros.html 에서 추가·수정)
+블록 색: notes/_boxes.css 맨 위 변수에서 수정
+-->
+
+Draft 
+
+... 
+
+::: {#def-topological-space}
+## Topology and Topological Space
+
+A *topological space* is a pair $(S, \mathcal{T})$, where $S$ is a set and $\mathcal{T}$ is a collection of subsets of $S$ (called *open sets*) satisfying:
+
+(a) $\varnothing, S \in \mathcal{T}$,
+(b) any union of members of $\mathcal{T}$ is in $\mathcal{T}$,
+(c) any finite intersection of members of $\mathcal{T}$ is in $\mathcal{T}$.
+
+We call $\mathcal{T}$ a *topology* on $S$. A set $F \subset S$ is *closed* if $S \setminus F \in \mathcal{T}$.
+:::
+
+::: {#def-metric-space}
+## Metric and Metric Spaces
+
+A *metric* on a set $S$ is a function $d: S \times S \to [0, \infty)$ that satisfies
+
+(a) $d(x_1, x_2) = 0$ if and only if $x_1 = x_2$,
+(b) $d(x_1, x_2) = d(x_2, x_1)$, and
+(c) $d(x_1, x_3) \leq d(x_1, x_2) + d(x_2, x_3)$,
+
+for $x_1, x_2, x_3 \in S$. We call the pair $(S, d)$ a *metric space*.
+:::
+
+::: {#thm-metric-topology}
+A metric space $(S,d)$ induces a topological space $(S, \mathcal{T}_d)$, where
+$$
+\mathcal{T}_d \coloneqq \{E \subset S : E \text{ is open with respect to } d\}.
+$$
+:::
+
+::: {#def-open-closed}
+## Openness and Closedness
+
+Let $(S, d)$ be a metric space with $E \subset S$. Then $E$ is said to be *open* if for every $e \in E$, there exists an $\epsilon > 0$ such that $\{x \in S: d(x, e) < \epsilon\} \subset E$. The subset $E$ is *closed* if $S \setminus E$ is open.
+:::
+
+::: {.remark}
+The definitions of openness or closedness in topological spaces are equivalent with ones in metric spaces.
+:::
+
+::: {#def-closure}
+## Closure
+
+Let $S$ be a topological space and $A \subset S$. The *closure* $\overline{A}$ of $A$ is the intersection of all closed subsets of $S$ containing $A$, i.e., the smallest closed set containing $A$.
+:::
+
+::: {#def-interior}
+## Interior
+
+Let $S$ be a topological space and $A \subset S$. The *interior* $A^\circ$ of $A$ is the union of all open subsets of $S$ contained in $A$, i.e., the largest open set contained in $A$.
+:::
+
+::: {#def-boundary}
+## Boundary
+
+Let $S$ be a topological space and $A \subset S$. The *boundary* $\partial A$ of $A$ is
+$$
+\partial A = \overline A \setminus A^\circ.
+$$
+:::
+
+::: {#def-convergence}
+## Convergence
+
+Let $(S, d)$ be a metric space. A sequence $\{x_n\}_{n \in \mathbb{N}} \subset S$ *converges* to a limit $x \in S$ if for any $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that
+$$
+d(x_n, x) < \epsilon, \quad \forall n \geq N.
+$$
+It is denoted as $x_n \to x$ (as $n \to \infty$).
+:::
+
+::: {.remark}
+In a metric space, a limit is unique.
+:::
+
+::: {#def-cauchy}
+## Cauchy Sequence
+
+Let $(S, d)$ be a metric space. A sequence $\{x_n\}_{n \in \mathbb{N}} \subset S$ is called a *Cauchy sequence* if for any $\epsilon > 0$, there exists $N \in \mathbb{N}$ such that
+$$
+\sup_{m, n \geq N} d(x_m, x_n) < \epsilon.
+$$
+:::
+
+::: {#thm-cauchy-convergence}
+Let $(S, d)$ be a metric space, and let $\{x_n\} \subset S$ be a sequence.
+
+(a) If $\{x_n\}$ converges, then $\{x_n\}$ is a Cauchy sequence.
+(b) If $\{x_n\}$ is a Cauchy sequence and has a convergent subsequence, then $\{x_n\}$ converges.
+:::
+
+::: {#def-completeness}
+## Completeness
+
+A metric space $(S, d)$ is *complete* if every Cauchy sequence in $S$ converges to a point of $S$. A subset $E \subset S$ is complete if every Cauchy sequence in $E$ converges to a point of $E$.
+:::
+
+::: {#def-open-cover}
+## Open Cover
+
+Let $S$ be a topological space and $E \subset S$. An *open cover* of $E$ is a collection $\{G_\alpha\}_{\alpha \in I}$ of open subsets of $S$ such that $E \subset \bigcup_{\alpha \in I} G_\alpha$. A *subcover* is a subcollection $\{G_\alpha\}_{\alpha \in J}$, $J \subset I$, which is still an open cover of $E$.
+:::
+
+::: {#def-compactness}
+## Compactness
+
+A topological space $S$ is *compact* if every open cover has a finite subcover. A subset $E \subset S$ is compact if every open cover of $E$ has a finite subcover.
+:::
+
+::: {#def-lindelof}
+## Lindelöf Space
+
+A topological space $S$ is called a *Lindelöf space* if every open cover has a countable subcover. A subset $E \subset S$ is Lindelöf if every open cover of $E$ has a countable subcover.
+:::
+
+::: {#def-countable}
+## Countable Set
+
+A set $A$ is *countable* if there exists an injective map $f: A \to \mathbb{N}$. A set that is not countable is *uncountable*.
+:::
+
+::: {#def-dense}
+## Dense Set
+
+Let $S$ be a topological space. A subset $A \subset S$ is *dense* in $S$ if, for the closure $\overline A$,
+$$
+\overline A = S.
+$$
+:::
+
+::: {#def-separability}
+## Separability
+
+A topological space $S$ is *separable* if it contains a countable dense subset. A subset $E \subset S$ is separable if it contains a countable dense subset $D \subset E$.
+:::
+
+::: {#thm-closed-subset}
+Let $S$ be a topological space. Then, the following hold.
+
+(a) If $S$ is a compact space, then a closed subset $E \subset S$ is compact.
+(b) If $S$ is a Lindelöf space, then a closed subset $E \subset S$ is Lindelöf.
+:::
+
+::: {#thm-separable-lindelof}
+Let $S$ be a metric space. Then, $S$ is separable if and only if $S$ is Lindelöf.
+:::
+
+::: {#def-boundedness}
+## Boundedness
+
+Let $(S, d)$ be a metric space. A subset $E \subset S$ is *bounded* if there exists $r > 0$ such that
+$$
+d(x, y) < r, \quad \forall x, y \in E.
+$$
+:::
+
+::: {#def-total-boundedness}
+## Total Boundedness
+
+Let $(S, d)$ be a metric space. A subset $E \subset S$ is *totally bounded* if, for any $\epsilon > 0$, there exist finitely many points $x_1, \dots, x_n \in E$ such that
+$$
+E \subset \bigcup_{i=1}^n B_\epsilon(x_i),
+$$
+where $B_\epsilon(x_i) = \{x \in S: d(x_i, x) < \epsilon\}$.
+:::
+
+::: {#thm-totally-bounded}
+Every totally bounded set is bounded. The converse is not necessarily true.
+:::
+
+::: {#def-sequential-compactness}
+## Sequential Compactness
+
+Let $S$ be a topological space. A subset $E \subset S$ is *sequentially compact* if every sequence in $E$ has a convergent subsequence in $E$.
+:::
+
+::: {#thm-heine-borel}
+## Heine-Borel Theorem
+
+For a set $E$ in the Euclidean space $\mathbb{R}^k$, the following are equivalent.
+
+(a) $E$ is compact.
+(b) $E$ is closed and bounded.
+:::
+
+::: {#thm-generalized-heine-borel}
+## Generalized Heine-Borel Theorem
+
+For a set $E$ in a metric space $S$, the following are equivalent.
+
+(a) $E$ is compact.
+(b) $E$ is sequentially compact.
+(c) $E$ is complete and totally bounded.
+:::
+
+::: {#def-polish}
+## Polish Space
+
+A *Polish space* is a topological space that is separable and metrizable in such a way that it becomes complete.
+:::
+
+::: {.remark}
+More explicitly, a topological space $(S, \mathcal{T})$ is called *Polish* if $(S,\mathcal{T})$ is separable and there exists a metric $d$ on $S$ such that $\mathcal{T}$ is the topology induced by $d$ and $(S, d)$ is complete.
+:::
+
+### References
+
+- Rudin, W. (1976). Principles of Mathematical Analysis (3rd ed.). McGraw-Hill.
+- ... 

@@ -1,9 +1,10 @@
 ---
 title: "Probability Theory"
-description: "Overview of the Probability Theory notes"
+description: "-"
 toc: false
 ---
 
-Notes on measure-theoretic probability: probability spaces, random variables, expectation, and limit theorems.
+**References**
 
-<!-- 이 과목의 노트 목록은 왼쪽 사이드바에 자동으로 표시됨 -->
+- Durrett, R. (2019). *Probability: Theory and Examples* (5th ed.). Cambridge University Press.
+    

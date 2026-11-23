@@ -1,0 +1,11 @@
+---
+title: "Mathematics"
+description: "-"
+toc: false
+---
+
+**References**
+
+- Rudin, W. (1976). Principles of Mathematical Analysis (3rd ed.). McGraw-Hill.
+- ...
+    
