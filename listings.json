@@ -2,11 +2,13 @@
   {
     "listing": "/notes/index.html",
     "items": [
+      "/notes/Math/basic-topology.html",
+      "/notes/ProbTheory/conditional.html",
       "/notes/StatTheory/00-intro.html"
     ]
   },
   {
-    "listing": "/projects/index.html",
+    "listing": "/labs/index.html",
     "items": []
   },
   {
@@ -14,7 +16,7 @@
     "items": []
   },
   {
-    "listing": "/labs/index.html",
+    "listing": "/projects/index.html",
     "items": []
   }
 ]
