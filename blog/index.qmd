@@ -1,0 +1,18 @@
+---
+title: "Blog"
+description: "Paper reviews and reading notes"
+body-classes: hide-title     # 제목 영역 숨김 (styles.css). title은 브라우저 탭·검색용으로 유지
+listing:
+  contents:                  # 분야 폴더 안의 리뷰 글을 자동 수집
+    - "*/*.qmd"
+    - "!*/index.qmd"         # 분야 소개 페이지는 목록에서 제외
+  type: grid                 # 카드형: 썸네일(image) + 제목 + 요약 + 카테고리
+  sort: "date desc"
+  categories: true           # 오른쪽 카테고리 필터
+  grid-columns: 2            # 좌측 사이드바·우측 카테고리 사이 공간에 맞춰 2열
+  image-height: 160px
+  fields: [image, date, title, description, categories]
+  filter-ui: true            # 검색창
+  sort-ui: true
+toc: false
+---

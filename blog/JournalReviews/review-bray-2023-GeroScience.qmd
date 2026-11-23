@@ -1,0 +1,56 @@
+---
+# 새 리뷰: 이 파일을 분야 폴더에 복사해 저장 (예: blog/JournalReviews/chernozhukov2018-dml.qmd)
+# 그림은 같은 폴더의 images/ 에 두고 상대경로로 참조
+title: "DAP - Physical Activity and Cognitive Dysfunction"
+subtitle: "Bray EE, et al. (2023) *GeroScience*"
+description: " "   # 카드에 표시되는 요약
+date: 2026-11-23
+image: images/thumbnail.png     # 카드 썸네일 (graphic abstract 등). 없으면 이 줄 삭제
+# 분야 카테고리는 폴더의 _metadata.yml이 자동으로 붙임 (JournalReviews → Journal Review)
+# 세부 태그가 필요할 때만 주석 해제 → 자동 카테고리에 추가로 붙음
+categories: [Dog Aging Project, DAP, Physical Activity, Cognitive Dysfunction]
+# draft: true                     # 공개할 때 이 줄 삭제
+---
+
+::: {.callout-note appearance="simple" icon=false}
+### Paper
+
+- **Title**: Associations between physical activity and cognitive dysfunction in older companion dogs: results from the Dog Aging Project
+- **Authors**: Bray, E.E., Raichlen, D.A., Forsyth, K.K. et al. 
+- **Venue**: GeroScience 2023
+:::
+
+
+### Why This Paper Matters
+
+- 
+
+
+### Research Question
+
+- 
+
+### Method
+
+- 
+
+
+<!-- ### Causal Framework 
+
+-  -->
+
+
+### Key Findings
+
+- 
+
+
+### Strength and Limitations 
+
+
+
+### Takeaways 
+
+
+
+### References

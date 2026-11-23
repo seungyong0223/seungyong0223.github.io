@@ -1,7 +1,0 @@
----
-title: "Title"
-date: 2026-11-22
-categories: [category1]
-description: "description"
-draft: true      # 공개 준비가 되면 이 줄 삭제
----

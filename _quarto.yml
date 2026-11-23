@@ -23,8 +23,8 @@ website:
         text: Notes
       - href: labs/index.qmd
         text: Labs
-      # - href: posts/index.qmd
-      #   text: Posts
+      - href: blog/index.qmd
+        text: Blog
     right:
       - icon: github
         href: https://github.com/seungyong0223
@@ -66,6 +66,18 @@ website:
           contents:
             - section: "Single-Cell"
               contents: "labs/BI/SingleCell/*"
+
+    - id: blog
+      title: "Blog"
+      style: docked
+      collapse-level: 1       # 분야별로 접힌 상태로 시작
+      contents:
+        - blog/index.qmd
+        - section: "Journal Reviews"
+          contents: "blog/JournalReviews/*"
+        # 개인 글 폴더를 만들면 아래 주석 해제 (blog/Personal/ + _metadata.yml + index.qmd)
+        # - section: "Personal"
+        #   contents: "blog/Personal/*"
 
 format:
   html:
