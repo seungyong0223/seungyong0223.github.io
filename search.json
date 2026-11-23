@@ -44,6 +44,93 @@
     ]
   },
   {
+    "objectID": "blog/JournalReviews/review-bray-2023-GeroScience.html",
+    "href": "blog/JournalReviews/review-bray-2023-GeroScience.html",
+    "title": "DAP - Physical Activity and Cognitive Dysfunction",
+    "section": "",
+    "text": "Paper\n\n\n\n\nTitle: Associations between physical activity and cognitive dysfunction in older companion dogs: results from the Dog Aging Project\nAuthors: Bray, E.E., Raichlen, D.A., Forsyth, K.K. et al. \nVenue: GeroScience 2023\n\n\n\n\nWhy This Paper Matters\n\n\n\n\n\nResearch Question\n\n\n\n\n\nMethod\n\n\n\n\n\n\nKey Findings\n\n\n\n\n\nStrength and Limitations\n\n\nTakeaways\n\n\nReferences",
+    "crumbs": [
+      "Blog",
+      "Journal Reviews",
+      "DAP - Physical Activity and Cognitive Dysfunction"
+    ]
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nDAP - Physical Activity and Cognitive Dysfunction\n\n\n\nJournal Review\n\nDog Aging Project\n\nDAP\n\nPhysical Activity\n\nCognitive Dysfunction\n\n\n\n\n\n\nNov 23, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nTatget Trial Emulation (TTE)\n\n\n\nJournal Review\n\nTTE\n\n\n\n\n\n\nNov 23, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhysical Activity and Dementia Risk\n\n\n\nJournal Review\n\nPhysical Activity\n\nDementia\n\n\n\n…\n\n\n\nNov 23, 2026\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Blog"
+    ]
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "labs/BioStat/Survival/index.html",
+    "href": "labs/BioStat/Survival/index.html",
+    "title": "Survival",
+    "section": "",
+    "text": "Survival analysis: censoring, Kaplan-Meier, and Cox models.",
+    "crumbs": [
+      "Labs",
+      "Biostatistics",
+      "Survival"
+    ]
+  },
+  {
+    "objectID": "labs/BioStat/DML/index.html",
+    "href": "labs/BioStat/DML/index.html",
+    "title": "DML",
+    "section": "",
+    "text": "Double/debiased machine learning for causal inference.",
+    "crumbs": [
+      "Labs",
+      "Biostatistics",
+      "DML"
+    ]
+  },
+  {
+    "objectID": "labs/index.html",
+    "href": "labs/index.html",
+    "title": "Labs",
+    "section": "",
+    "text": "Date\nTitle\nCategories\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Labs"
+    ]
+  },
+  {
+    "objectID": "labs/BioStat/TMLE/index.html",
+    "href": "labs/BioStat/TMLE/index.html",
+    "title": "TMLE",
+    "section": "",
+    "text": "Targeted maximum likelihood estimation for causal effects.",
+    "crumbs": [
+      "Labs",
+      "Biostatistics",
+      "TMLE"
+    ]
+  },
+  {
+    "objectID": "labs/BI/SingleCell/index.html",
+    "href": "labs/BI/SingleCell/index.html",
+    "title": "Single-Cell",
+    "section": "",
+    "text": "Single-cell RNA-seq analysis workflows.",
+    "crumbs": [
+      "Labs",
+      "Bioinformatics",
+      "Single-Cell"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "SeungYong Oh",
@@ -86,76 +173,28 @@
     "text": "Coursework\n\nTheory: Statistical Theory, Probability Theory, Real and Multivariate Analysis\nMethods: Machine Learning and Deep Learning for Data Science, Statistical Machine Learning, Statistical Computing\nApplications: Biostatistics, Genomic and Clinical Data Analysis, Clinical Genomic Medicine, Causal Inference"
   },
   {
-    "objectID": "labs/BI/SingleCell/index.html",
-    "href": "labs/BI/SingleCell/index.html",
-    "title": "Single-Cell",
+    "objectID": "blog/JournalReviews/review-hernan-2016-AmJEpidemiol.html",
+    "href": "blog/JournalReviews/review-hernan-2016-AmJEpidemiol.html",
+    "title": "Tatget Trial Emulation (TTE)",
     "section": "",
-    "text": "Single-cell RNA-seq analysis workflows.",
+    "text": "Paper\n\n\n\n\nTitle: Using Big Data to Emulate a Target Trial When a Randomized Trial Is Not Available\nAuthors: Hernán MA, Robins JM.\nVenue: American Journal of Epdemiology\n\n\n\nThis review independently summarizes and comments on the cited article.\n\nWhy This Paper Matters\n\n\n\n\n\nResearch Question\n\n\n\n\n\nMethod\n\n\n\n\n\n\nKey Findings\n\n\n\n\n\nStrength and Limitations\n\n\nTakeaways\n\n\nReferences\n\nHernán MA, Robins JM. Using Big Data to Emulate a Target Trial When a Randomized Trial Is Not Available. Am J Epidemiol. 2016;183(8):758-764. doi:10.1093/aje/kwv254\nHernán MA, Sauer BC, Hernández-Díaz S, Platt R, Shrier I. Specifying a target trial prevents immortal time bias and other self-inflicted injuries in observational analyses. J Clin Epidemiol. 2016;79:70-75. doi:10.1016/j.jclinepi.2016.04.014\nCashin AG, Hansford HJ, Hernán MA, et al. Transparent Reporting of Observational Studies Emulating a Target Trial-The TARGET Statement. JAMA. 2025;334(12):1084-1093. doi:10.1001/jama.2025.13350",
     "crumbs": [
-      "Labs",
-      "Bioinformatics",
-      "Single-Cell"
+      "Blog",
+      "Journal Reviews",
+      "Tatget Trial Emulation (TTE)"
     ]
   },
   {
-    "objectID": "labs/BioStat/TMLE/index.html",
-    "href": "labs/BioStat/TMLE/index.html",
-    "title": "TMLE",
+    "objectID": "blog/JournalReviews/review-sabia-2017-BMJ.html",
+    "href": "blog/JournalReviews/review-sabia-2017-BMJ.html",
+    "title": "Physical Activity and Dementia Risk",
     "section": "",
-    "text": "Targeted maximum likelihood estimation for causal effects.",
+    "text": "Paper\n\n\n\n\nTitle: Physical activity, cognitive decline, and risk of dementia: 28 year follow-up of Whitehall II cohort study\nAuthors: Sabia S, Dugravot A, Dartigues J, Abell J, Elbaz A, KivimÃ¤ki M et al. \nVenue: BMJ 2017\n\n\n\n\nResearch Question\n\n\nResearch Question\n\n\n\n\n\nMethod\n\n\n\n\n\nKey Findings\n\n\n\n\n\nStrength and Limitations\n\n\nSummary\n\n\nReferences",
     "crumbs": [
-      "Labs",
-      "Biostatistics",
-      "TMLE"
+      "Blog",
+      "Journal Reviews",
+      "Physical Activity and Dementia Risk"
     ]
-  },
-  {
-    "objectID": "labs/index.html",
-    "href": "labs/index.html",
-    "title": "Labs",
-    "section": "",
-    "text": "Date\nTitle\nCategories\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Labs"
-    ]
-  },
-  {
-    "objectID": "labs/BioStat/DML/index.html",
-    "href": "labs/BioStat/DML/index.html",
-    "title": "DML",
-    "section": "",
-    "text": "Double/debiased machine learning for causal inference.",
-    "crumbs": [
-      "Labs",
-      "Biostatistics",
-      "DML"
-    ]
-  },
-  {
-    "objectID": "labs/BioStat/Survival/index.html",
-    "href": "labs/BioStat/Survival/index.html",
-    "title": "Survival",
-    "section": "",
-    "text": "Survival analysis: censoring, Kaplan-Meier, and Cox models.",
-    "crumbs": [
-      "Labs",
-      "Biostatistics",
-      "Survival"
-    ]
-  },
-  {
-    "objectID": "posts/index.html",
-    "href": "posts/index.html",
-    "title": "Posts",
-    "section": "",
-    "text": "No matching items"
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "No matching items"
   },
   {
     "objectID": "publications.html",

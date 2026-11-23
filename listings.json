@@ -8,15 +8,19 @@
     ]
   },
   {
-    "listing": "/labs/index.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/index.html",
-    "items": []
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/JournalReviews/review-bray-2023-GeroScience.html",
+      "/blog/JournalReviews/review-hernan-2016-AmJEpidemiol.html",
+      "/blog/JournalReviews/review-sabia-2017-BMJ.html"
+    ]
   },
   {
     "listing": "/projects/index.html",
+    "items": []
+  },
+  {
+    "listing": "/labs/index.html",
     "items": []
   }
 ]
