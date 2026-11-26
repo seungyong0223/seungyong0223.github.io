@@ -42,11 +42,13 @@ website:
       contents:
         - notes/index.qmd
         - section: "Mathematics"
-          contents: "notes/Math/*"
-        - section: "Statistical Theory"
-          contents: "notes/StatTheory/*"
+          contents: "notes/01-Math/*"
         - section: "Probability Theory"
-          contents: "notes/ProbTheory/*"
+          contents: "notes/02-ProbTheory/*"
+        - section: "Statistical Theory"
+          contents: "notes/03-StatTheory/*"
+        - section: "Semiparametric Theory"
+          contents: "notes/04-Semiparametric/*"
 
     - id: labs
       title: "Labs"

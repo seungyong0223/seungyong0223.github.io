@@ -13,7 +13,7 @@ draft: true                     # 공개할 때 이 줄 삭제
 
 ## Goals
 
-- Related note: [Note Title](../../../notes/StatTheory/note-name.qmd)
+- Related note: [Note Title](../../../notes/03-StatTheory/note-name.qmd)
 - Check whether the distribution of the sample mean approaches normality (CLT).
 
 ## Simulation

@@ -1,0 +1,10 @@
+---
+title: "Semiparametric Theory"
+description: "-"
+toc: false
+---
+
+**References**
+
+- Semiparametric Theory and Missing Data (Tsiatis, 2006)
+- Asymptotic Statistics (van der Vaart, 1998)

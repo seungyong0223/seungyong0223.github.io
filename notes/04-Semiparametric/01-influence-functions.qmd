@@ -1,0 +1,166 @@
+---
+title: "Influence Functions"
+description: "Asymptotically linear estimators, influence functions, and regularity"
+date: 2026-11-26
+draft: false                     # 공개할 때 이 줄 삭제
+---
+
+## Introduction
+
+Let $(\mathcal{Z}, \mathcal{A}, P)$ be a probability space, and let $Z$ be a random vector taking values in $\mathcal{Z}$ with distribution $P$. Let $Z_1, \dots, Z_n$ be i.i.d. copies of $Z$. Suppose the density of $Z$ belongs to the class $\{p_Z(z; \theta): \theta \in \Theta\}$. Suppose the parameter $\theta$ can be written as $\theta = (\beta^\top, \eta^\top)^\top$, where $\beta \in \mathbb{R}^q$ is the parameter of interest and $\eta$ is the nuisance parameter that is finite- or infinite-dimensional. The true parameter is denoted by $\theta_0 = (\beta_0^\top, \eta_0^\top)^\top$.
+
+Consider the space $\mathcal{H}$ of measurable functions $\varphi: \mathcal{Z} \to \mathbb{R}^q$ such that
+
+$$
+\mathcal{H} \coloneqq \{\varphi: \E_P[\varphi(Z)] = 0^{q \times 1}, \; \E_P[\varphi(Z)^\top \varphi(Z)] < \infty \},
+$$
+
+which is equipped with a covariance inner product $\langle \varphi_1, \varphi_2 \rangle \coloneqq \E_P[\varphi_1^\top \varphi_2]$ and its induced norm $\| \cdot \|$. We have shown that $\mathcal{H}$ becomes a Hilbert space. (\*) When there is no ambiguity, we write $\E$ for $\E_P$ and $\E \varphi$ for $\E [\varphi(Z)]$.
+
+In this section, we consider finite-dimensional parametric models where
+
+$$
+\theta\in\Theta\subseteq\mathbb{R}^p,\quad
+\beta\in\mathbb{R}^q,\quad
+\eta\in\mathbb{R}^r,
+\quad p=q+r.
+$$
+
+Most reasonable estimators $\hat \beta_n$ for $\beta$ are asymptotically linear, that is, they can be uniquely characterized by the influence function of the estimator.
+
+::: {#def-asymptotically-linear}
+## Asymptotically Linear
+An estimator $\hat \beta_n$ of $\beta$ is said to be *asymptotically linear* if there exists a function $\varphi \in \mathcal{H}$ (i.e., $\E \varphi = 0$ and $\E [\varphi^\top \varphi] < \infty$) such that
+
+$$
+n^{1/2} (\hat \beta_n - \beta_0) = n^{-1/2} \sum_{i=1}^n \varphi(Z_i) + o_p(1),
+$$
+
+where $o_p(1) \xrightarrow{p} 0$ as $n \to \infty$. Here, $\varphi$ is called the *influence function* of the estimator $\hat \beta_n$.
+:::
+
+::: {#prp-al-normality}
+For an asymptotically linear estimator $\hat \beta_n$ of $\beta_0$ and its influence function $\varphi \in \mathcal{H}$, it holds
+
+$$
+n^{1/2} (\hat \beta_n - \beta_0) \rightsquigarrow N \left(0, \E [\varphi \varphi^\top] \right).
+$$
+:::
+
+::: {.proof}
+By the central limit theorem, it holds
+
+$$
+n^{-1/2} \sum_{i=1}^n \varphi(Z_i) \rightsquigarrow N \left(0, \E [\varphi \varphi^\top] \right).
+$$
+
+Then, by Slutsky's theorem, it follows $n^{1/2} (\hat \beta_n - \beta_0) \rightsquigarrow N \left(0, \E [\varphi \varphi^\top] \right)$.
+:::
+
+::: {#exm-normal-mle}
+Let $Z_1, \dots, Z_n \iid N(\mu, \sigma^2)$. The maximum likelihood estimators for $\mu$ and $\sigma^2$ are given as
+
+$$
+\hat \mu_n = n^{-1} \sum_{i=1}^n Z_i, \qquad \hat \sigma_n^2 = n^{-1} \sum_{i=1}^n (Z_i - \hat \mu_n)^2.
+$$
+
+Then, we can write the expressions as
+
+$$
+n^{1/2} (\hat \mu_n - \mu_0) = n^{-1/2} \sum_{i=1}^n (Z_i - \mu_0),
+$$
+
+and
+
+$$
+n^{1/2} (\hat \sigma_n^2 - \sigma_0^2) = n^{-1/2} \sum_{i=1}^n \{(Z_i  - \mu_0)^2 - \sigma_0^2\} - n^{1/2} (\hat \mu_n - \mu_0)^2.
+$$
+
+Since $n^{1/2}(\hat \mu_n - \mu_0) = O_p(1)$ and $(\hat \mu_n - \mu_0) = o_p(1)$, $n^{1/2} (\hat \mu_n - \mu_0)^2 = o_p(1)$. Therefore, both $\hat \mu_n$ and $\hat \sigma_n^2$ are asymptotically linear, and their influence functions are given as
+
+$$
+\varphi_1(Z_i) = (Z_i - \mu_0), \qquad \varphi_2(Z_i) = \{(Z_i  - \mu_0)^2 - \sigma_0^2\},
+$$
+
+respectively.
+:::
+
+::: {#thm-if-unique}
+An asymptotically linear estimator has a unique (a.s.) influence function.
+:::
+
+::: {.proof}
+Let $\varphi, \varphi' \in \mathcal{H}$ be two influence functions of an estimator $\hat \beta_n$. Then, it holds
+
+$$
+\begin{aligned}
+n^{1/2} (\hat \beta_n - \beta) &= n^{-1/2} \sum_{i=1}^n \varphi(Z_i) + o_p(1), \\
+n^{1/2} (\hat \beta_n - \beta) &= n^{-1/2} \sum_{i=1}^n \varphi'(Z_i) + o_p(1),
+\end{aligned}
+$$
+
+and thus
+
+$$
+n^{-1/2} \sum_{i=1}^n \{\varphi(Z_i) - \varphi'(Z_i)\} = o_p(1).
+$$
+
+By the central limit theorem, $n^{-1/2} \sum_{i=1}^n \{\varphi(Z_i) - \varphi'(Z_i)\} \rightsquigarrow N(0, \E[(\varphi - \varphi')(\varphi - \varphi')^\top])$. That is, $\E[(\varphi - \varphi')(\varphi - \varphi')^\top] = 0^{q \times q}$ and thus $\varphi = \varphi'$ a.s.
+:::
+
+::: {#exm-hodges}
+## Super-efficiency and Hodges' Estimator
+Let $Z_1, \dots, Z_n \iid N(\mu, 1)$, $\mu \in \mathbb{R}$. The maximum likelihood estimator (MLE) of $\mu$ is given by $\bar Z_n \coloneqq n^{-1} \sum_{i=1}^n Z_i$, and we have
+
+$$
+n^{1/2} (\bar Z_n - \mu) \rightsquigarrow N(0, 1).
+$$
+
+Consider an estimator $\hat \mu_n$ defined as
+
+$$
+\hat \mu_n = \begin{cases}
+    \bar Z_n, & |\bar Z_n| > n^{-1/4} \\
+    0, & |\bar Z_n| \leq n^{-1/4}
+\end{cases}.
+$$
+
+When $\mu \neq 0$,
+
+$$
+n^{1/2}(\hat \mu_n - \mu) \rightsquigarrow N(0, 1).
+$$
+
+When $\mu = 0$,
+
+$$
+n^{1/2}(\hat \mu_n - \mu) \rightsquigarrow N(0, 0).
+$$
+
+Recall that the MLE is asymptotically efficient. That is, the MLE asymptotically achieves the Cramér–Rao lower bound, in this case, the variance $1$ of $N(0, 1)$. However, $\hat \mu_n$ has a smaller variance than $1$ when $\mu = 0$. Such estimators are said to be *super-efficient*. Although they seem to be efficient, they have undesirable local properties (Tsiatis, 2006).
+:::
+
+::: {#def-regularity}
+## Regularity
+Consider a local data generating process (LDGP), where, for each $n$, the data are distributed according to $\theta_n$, where $n^{1/2} (\theta_n - \theta^*)$ converges to a constant for some fixed parameter $\theta^*$. That is,
+
+$$
+Z_{n1}, \dots, Z_{nn} \iid p(z, \theta_n),
+$$
+
+where
+
+$$
+\theta_n = (\beta_n^\top, \eta_n^\top)^\top, \quad \theta^* = ((\beta^*)^\top, (\eta^*)^\top)^\top.
+$$
+
+An estimator $\hat \beta_n = \hat \beta_n(Z_{n1}, \dots, Z_{nn})$ is said to be *regular* if, for each $\theta^*$, $n^{1/2}(\hat \beta_n - \beta_n)$ has a limiting distribution that does not depend on the LDGP.
+:::
+
+::: {.remark}
+We only consider regular and asymptotically linear (RAL) estimators in what follows.
+:::
+
+## References
+
+- Tsiatis, A. A. (2006). *Semiparametric Theory and Missing Data*. Springer.

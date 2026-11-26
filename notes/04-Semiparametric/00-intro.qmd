@@ -2,13 +2,14 @@
 # 한국어로 쓰는 노트라면 아래에 lang: ko 추가 → "정리 1", "증명" 등으로 표시
 title: "Introduction"
 description: "description"
-date: 2026-11-22
-# 과목 카테고리는 폴더의 _metadata.yml이 자동으로 붙임 (StatTheory → Statistical Theory)
+date: 2026-11-26
+# 과목 카테고리는 폴더의 _metadata.yml이 자동으로 붙임 ( → Semiparametric Theory)
 # 세부 주제 태그가 필요할 때만 주석 해제 → 과목 카테고리에 추가로 붙음
-# categories: [Statistical Theory]
+# categories: [Semiparametric Theory]
 # draft: true 
 ---
 
+<!--
 블록 양식 (번호·참조 있음: #접두어-이름 / 번호 없음: .클래스)
   Definition  ::: {#def-이름}    참조 @def-이름
   Theorem     ::: {#thm-이름}    참조 @thm-이름
@@ -69,4 +70,4 @@ $\hat\mu_{\text{MLE}} = \argmax_\mu \ell(\mu) = \bar X$.
 
 ## References
 
-- Billingsley, P. (1999). Convergence of Probability Measures (2nd ed.). Wiley.
+- Tsiatis, (2006)

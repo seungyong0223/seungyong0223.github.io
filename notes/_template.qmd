@@ -1,10 +1,10 @@
 ---
-# 새 노트: 이 파일을 과목 폴더에 복사해 저장 (예: notes/StatTheory/01-sufficiency.qmd)
+# 새 노트: 이 파일을 과목 폴더에 복사해 저장 (예: notes/03-StatTheory/01-sufficiency.qmd)
 # 한국어로 쓰는 노트라면 아래에 lang: ko 추가 → "정리 1", "증명" 등으로 표시
 title: "Note Title"
 description: "One-line summary of the note"
 date: 2026-11-22
-# 과목 카테고리는 폴더의 _metadata.yml이 자동으로 붙임 (StatTheory → Statistical Theory)
+# 과목 카테고리는 폴더의 _metadata.yml이 자동으로 붙임 (03-StatTheory → Statistical Theory)
 # 세부 주제 태그가 필요할 때만 주석 해제 → 과목 카테고리에 추가로 붙음
 # categories: [Estimation]
 draft: true                     # 공개할 때 이 줄 삭제

@@ -4,3 +4,10 @@
 body.hide-title #title-block-header {
   display: none;
 }
+
+/* 본문 문단 양쪽 정렬: 줄 끝을 오른쪽까지 맞춤 (단어 간격 자동 조정) */
+#quarto-document-content p,
+#quarto-document-content li {
+  text-align: justify;
+  hyphens: auto;          /* 긴 영어 단어는 하이픈으로 나눠 간격이 과하게 벌어지는 것을 줄임 (lang 설정 기준) */
+}
