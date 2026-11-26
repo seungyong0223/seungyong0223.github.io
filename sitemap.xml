@@ -1,83 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://seungyong0223.github.io/notes/StatTheory/index.html</loc>
+    <loc>https://seungyong0223.github.io/notes/04-Semiparametric/index.html</loc>
+    <lastmod>2026-11-26T14:15:31.041Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seungyong0223.github.io/notes/04-Semiparametric/00-intro.html</loc>
+    <lastmod>2026-11-26T14:15:09.730Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seungyong0223.github.io/notes/01-Math/index.html</loc>
+    <lastmod>2026-11-23T03:25:59.751Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seungyong0223.github.io/notes/03-StatTheory/index.html</loc>
     <lastmod>2026-11-23T03:16:02.845Z</lastmod>
   </url>
   <url>
-    <loc>https://seungyong0223.github.io/notes/Math/basic-topology.html</loc>
-    <lastmod>2026-11-23T03:26:40.015Z</lastmod>
-  </url>
-  <url>
-    <loc>https://seungyong0223.github.io/notes/index.html</loc>
-    <lastmod>2026-11-23T03:08:48.233Z</lastmod>
-  </url>
-  <url>
-    <loc>https://seungyong0223.github.io/notes/ProbTheory/index.html</loc>
-    <lastmod>2026-11-23T02:53:07.334Z</lastmod>
-  </url>
-  <url>
-    <loc>https://seungyong0223.github.io/blog/JournalReviews/review-bray-2023-GeroScience.html</loc>
-    <lastmod>2026-11-23T09:20:15.697Z</lastmod>
-  </url>
-  <url>
-    <loc>https://seungyong0223.github.io/blog/JournalReviews/index.html</loc>
-    <lastmod>2026-11-23T08:34:11.893Z</lastmod>
-  </url>
-  <url>
-    <loc>https://seungyong0223.github.io/blog/index.html</loc>
-    <lastmod>2026-11-23T08:27:45.301Z</lastmod>
-  </url>
-  <url>
-    <loc>https://seungyong0223.github.io/projects/index.html</loc>
-    <lastmod>2026-11-22T07:50:22.284Z</lastmod>
-  </url>
-  <url>
-    <loc>https://seungyong0223.github.io/labs/BioStat/Survival/index.html</loc>
-    <lastmod>2026-11-22T09:28:32.085Z</lastmod>
-  </url>
-  <url>
-    <loc>https://seungyong0223.github.io/labs/BioStat/DML/index.html</loc>
-    <lastmod>2026-11-22T09:28:32.084Z</lastmod>
-  </url>
-  <url>
-    <loc>https://seungyong0223.github.io/labs/index.html</loc>
-    <lastmod>2026-11-22T09:28:30.177Z</lastmod>
-  </url>
-  <url>
-    <loc>https://seungyong0223.github.io/labs/BioStat/TMLE/index.html</loc>
-    <lastmod>2026-11-22T09:28:32.082Z</lastmod>
-  </url>
-  <url>
-    <loc>https://seungyong0223.github.io/labs/BI/SingleCell/index.html</loc>
-    <lastmod>2026-11-22T09:28:32.087Z</lastmod>
-  </url>
-  <url>
-    <loc>https://seungyong0223.github.io/index.html</loc>
-    <lastmod>2026-11-22T10:16:19.143Z</lastmod>
-  </url>
-  <url>
-    <loc>https://seungyong0223.github.io/blog/JournalReviews/review-hernan-2016-AmJEpidemiol.html</loc>
-    <lastmod>2026-11-23T09:46:14.262Z</lastmod>
-  </url>
-  <url>
-    <loc>https://seungyong0223.github.io/blog/JournalReviews/review-sabia-2017-BMJ.html</loc>
-    <lastmod>2026-11-23T09:20:08.513Z</lastmod>
+    <loc>https://seungyong0223.github.io/notes/02-ProbTheory/conditional.html</loc>
+    <lastmod>2026-11-23T03:07:56.717Z</lastmod>
   </url>
   <url>
     <loc>https://seungyong0223.github.io/publications.html</loc>
     <lastmod>2026-11-22T08:43:31.074Z</lastmod>
   </url>
   <url>
-    <loc>https://seungyong0223.github.io/notes/ProbTheory/conditional.html</loc>
-    <lastmod>2026-11-23T03:07:56.717Z</lastmod>
+    <loc>https://seungyong0223.github.io/blog/JournalReviews/review-sabia-2017-BMJ.html</loc>
+    <lastmod>2026-11-23T09:20:08.513Z</lastmod>
   </url>
   <url>
-    <loc>https://seungyong0223.github.io/notes/Math/index.html</loc>
-    <lastmod>2026-11-23T03:25:59.751Z</lastmod>
+    <loc>https://seungyong0223.github.io/blog/JournalReviews/review-hernan-2016-AmJEpidemiol.html</loc>
+    <lastmod>2026-11-23T09:46:14.262Z</lastmod>
   </url>
   <url>
-    <loc>https://seungyong0223.github.io/notes/StatTheory/00-intro.html</loc>
-    <lastmod>2026-11-23T03:15:47.862Z</lastmod>
+    <loc>https://seungyong0223.github.io/index.html</loc>
+    <lastmod>2026-11-22T10:16:19.143Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seungyong0223.github.io/labs/BI/SingleCell/index.html</loc>
+    <lastmod>2026-11-22T09:28:32.087Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seungyong0223.github.io/labs/BioStat/TMLE/index.html</loc>
+    <lastmod>2026-11-22T09:28:32.082Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seungyong0223.github.io/labs/index.html</loc>
+    <lastmod>2026-11-22T09:28:30.177Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seungyong0223.github.io/labs/BioStat/DML/index.html</loc>
+    <lastmod>2026-11-22T09:28:32.084Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seungyong0223.github.io/labs/BioStat/Survival/index.html</loc>
+    <lastmod>2026-11-22T09:28:32.085Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seungyong0223.github.io/projects/index.html</loc>
+    <lastmod>2026-11-22T07:50:22.284Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seungyong0223.github.io/blog/index.html</loc>
+    <lastmod>2026-11-23T08:27:45.301Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seungyong0223.github.io/blog/JournalReviews/index.html</loc>
+    <lastmod>2026-11-23T08:34:11.893Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seungyong0223.github.io/blog/JournalReviews/review-bray-2023-GeroScience.html</loc>
+    <lastmod>2026-11-23T09:20:15.697Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seungyong0223.github.io/notes/02-ProbTheory/index.html</loc>
+    <lastmod>2026-11-23T02:53:07.334Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seungyong0223.github.io/notes/03-StatTheory/00-intro.html</loc>
+    <lastmod>2026-11-26T14:16:21.770Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seungyong0223.github.io/notes/index.html</loc>
+    <lastmod>2026-11-23T03:08:48.233Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seungyong0223.github.io/notes/01-Math/basic-topology.html</loc>
+    <lastmod>2026-11-23T03:26:40.015Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seungyong0223.github.io/notes/04-Semiparametric/01-influence-functions.html</loc>
+    <lastmod>2026-11-26T14:21:24.094Z</lastmod>
   </url>
 </urlset>

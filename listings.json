@@ -1,11 +1,11 @@
 [
   {
-    "listing": "/notes/index.html",
-    "items": [
-      "/notes/Math/basic-topology.html",
-      "/notes/ProbTheory/conditional.html",
-      "/notes/StatTheory/00-intro.html"
-    ]
+    "listing": "/labs/index.html",
+    "items": []
+  },
+  {
+    "listing": "/projects/index.html",
+    "items": []
   },
   {
     "listing": "/blog/index.html",
@@ -16,11 +16,13 @@
     ]
   },
   {
-    "listing": "/projects/index.html",
-    "items": []
-  },
-  {
-    "listing": "/labs/index.html",
-    "items": []
+    "listing": "/notes/index.html",
+    "items": [
+      "/notes/04-Semiparametric/00-intro.html",
+      "/notes/04-Semiparametric/01-influence-functions.html",
+      "/notes/01-Math/basic-topology.html",
+      "/notes/02-ProbTheory/conditional.html",
+      "/notes/03-StatTheory/00-intro.html"
+    ]
   }
 ]

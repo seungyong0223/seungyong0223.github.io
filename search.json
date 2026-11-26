@@ -1,7 +1,65 @@
 [
   {
-    "objectID": "notes/StatTheory/index.html",
-    "href": "notes/StatTheory/index.html",
+    "objectID": "notes/04-Semiparametric/index.html",
+    "href": "notes/04-Semiparametric/index.html",
+    "title": "Semiparametric Theory",
+    "section": "",
+    "text": "\\(\n\\newcommand{\\E}{\\mathbb{E}}\n\\newcommand{\\Var}{\\operatorname{Var}}\n\\newcommand{\\Cov}{\\operatorname{Cov}}\n\\newcommand{\\argmax}{\\operatorname*{arg\\,max}}\n\\newcommand{\\argmin}{\\operatorname*{arg\\,min}}\n\\newcommand{\\iid}{\\overset{\\text{iid}}{\\sim}}\n\\newcommand{\\coloneqq}{\\mathrel{\\vcenter{:}}=}\n\\)\n\n\n\n\n\nReferences\n\nSemiparametric Theory and Missing Data (Tsiatis, 2006)\nAsymptotic Statistics (van der Vaart, 1998)",
+    "crumbs": [
+      "Notes",
+      "Semiparametric Theory"
+    ]
+  },
+  {
+    "objectID": "notes/04-Semiparametric/00-intro.html",
+    "href": "notes/04-Semiparametric/00-intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "\\(\n\\newcommand{\\E}{\\mathbb{E}}\n\\newcommand{\\Var}{\\operatorname{Var}}\n\\newcommand{\\Cov}{\\operatorname{Cov}}\n\\newcommand{\\argmax}{\\operatorname*{arg\\,max}}\n\\newcommand{\\argmin}{\\operatorname*{arg\\,min}}\n\\newcommand{\\iid}{\\overset{\\text{iid}}{\\sim}}\n\\newcommand{\\coloneqq}{\\mathrel{\\vcenter{:}}=}\n\\)",
+    "crumbs": [
+      "Notes",
+      "Semiparametric Theory",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "notes/04-Semiparametric/00-intro.html#definitions-and-theorems",
+    "href": "notes/04-Semiparametric/00-intro.html#definitions-and-theorems",
+    "title": "Introduction",
+    "section": "Definitions and Theorems",
+    "text": "Definitions and Theorems",
+    "crumbs": [
+      "Notes",
+      "Semiparametric Theory",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "notes/04-Semiparametric/00-intro.html#references",
+    "href": "notes/04-Semiparametric/00-intro.html#references",
+    "title": "Introduction",
+    "section": "References",
+    "text": "References\n\nTsiatis, (2006)",
+    "crumbs": [
+      "Notes",
+      "Semiparametric Theory",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "notes/01-Math/index.html",
+    "href": "notes/01-Math/index.html",
+    "title": "Mathematics",
+    "section": "",
+    "text": "\\(\n\\newcommand{\\E}{\\mathbb{E}}\n\\newcommand{\\Var}{\\operatorname{Var}}\n\\newcommand{\\Cov}{\\operatorname{Cov}}\n\\newcommand{\\argmax}{\\operatorname*{arg\\,max}}\n\\newcommand{\\argmin}{\\operatorname*{arg\\,min}}\n\\newcommand{\\iid}{\\overset{\\text{iid}}{\\sim}}\n\\newcommand{\\coloneqq}{\\mathrel{\\vcenter{:}}=}\n\\)\n\n\n\n\n\nReferences\n\nRudin, W. (1976). Principles of Mathematical Analysis (3rd ed.). McGraw-Hill.\n…",
+    "crumbs": [
+      "Notes",
+      "Mathematics"
+    ]
+  },
+  {
+    "objectID": "notes/03-StatTheory/index.html",
+    "href": "notes/03-StatTheory/index.html",
     "title": "Statistical Theory",
     "section": "",
     "text": "\\(\n\\newcommand{\\E}{\\mathbb{E}}\n\\newcommand{\\Var}{\\operatorname{Var}}\n\\newcommand{\\Cov}{\\operatorname{Cov}}\n\\newcommand{\\argmax}{\\operatorname*{arg\\,max}}\n\\newcommand{\\argmin}{\\operatorname*{arg\\,min}}\n\\newcommand{\\iid}{\\overset{\\text{iid}}{\\sim}}\n\\newcommand{\\coloneqq}{\\mathrel{\\vcenter{:}}=}\n\\)\n\n\n\n\n\nReferences\n\nBillingsley, P. (1999). Convergence of Probability Measures (2nd ed.). Wiley.\nDurrett, R. (2019). Probability: Theory and Examples (5th ed.). Cambridge University Press.",
@@ -11,123 +69,60 @@
     ]
   },
   {
-    "objectID": "notes/Math/basic-topology.html",
-    "href": "notes/Math/basic-topology.html",
-    "title": "Basic Topology of Metric Spaces",
+    "objectID": "notes/02-ProbTheory/conditional.html",
+    "href": "notes/02-ProbTheory/conditional.html",
+    "title": "Conditional Expectation",
     "section": "",
-    "text": "\\(\n\\newcommand{\\E}{\\mathbb{E}}\n\\newcommand{\\Var}{\\operatorname{Var}}\n\\newcommand{\\Cov}{\\operatorname{Cov}}\n\\newcommand{\\argmax}{\\operatorname*{arg\\,max}}\n\\newcommand{\\argmin}{\\operatorname*{arg\\,min}}\n\\newcommand{\\iid}{\\overset{\\text{iid}}{\\sim}}\n\\newcommand{\\coloneqq}{\\mathrel{\\vcenter{:}}=}\n\\)\n\n\n\n\n\n\nDraft\n…\n\nDefinition 1 (Topology and Topological Space) A topological space is a pair \\((S, \\mathcal{T})\\), where \\(S\\) is a set and \\(\\mathcal{T}\\) is a collection of subsets of \\(S\\) (called open sets) satisfying:\n\n\\(\\varnothing, S \\in \\mathcal{T}\\),\nany union of members of \\(\\mathcal{T}\\) is in \\(\\mathcal{T}\\),\nany finite intersection of members of \\(\\mathcal{T}\\) is in \\(\\mathcal{T}\\).\n\nWe call \\(\\mathcal{T}\\) a topology on \\(S\\). A set \\(F \\subset S\\) is closed if \\(S \\setminus F \\in \\mathcal{T}\\).\n\n\nDefinition 2 (Metric and Metric Spaces) A metric on a set \\(S\\) is a function \\(d: S \\times S \\to [0, \\infty)\\) that satisfies\n\n\\(d(x_1, x_2) = 0\\) if and only if \\(x_1 = x_2\\),\n\\(d(x_1, x_2) = d(x_2, x_1)\\), and\n\\(d(x_1, x_3) \\leq d(x_1, x_2) + d(x_2, x_3)\\),\n\nfor \\(x_1, x_2, x_3 \\in S\\). We call the pair \\((S, d)\\) a metric space.\n\n\nTheorem 1 A metric space \\((S,d)\\) induces a topological space \\((S, \\mathcal{T}_d)\\), where \\[\n\\mathcal{T}_d \\coloneqq \\{E \\subset S : E \\text{ is open with respect to } d\\}.\n\\]\n\n\nDefinition 3 (Openness and Closedness) Let \\((S, d)\\) be a metric space with \\(E \\subset S\\). Then \\(E\\) is said to be open if for every \\(e \\in E\\), there exists an \\(\\epsilon &gt; 0\\) such that \\(\\{x \\in S: d(x, e) &lt; \\epsilon\\} \\subset E\\). The subset \\(E\\) is closed if \\(S \\setminus E\\) is open.\n\n\nRemark. The definitions of openness or closedness in topological spaces are equivalent with ones in metric spaces.\n\n\nDefinition 4 (Closure) Let \\(S\\) be a topological space and \\(A \\subset S\\). The closure \\(\\overline{A}\\) of \\(A\\) is the intersection of all closed subsets of \\(S\\) containing \\(A\\), i.e., the smallest closed set containing \\(A\\).\n\n\nDefinition 5 (Interior) Let \\(S\\) be a topological space and \\(A \\subset S\\). The interior \\(A^\\circ\\) of \\(A\\) is the union of all open subsets of \\(S\\) contained in \\(A\\), i.e., the largest open set contained in \\(A\\).\n\n\nDefinition 6 (Boundary) Let \\(S\\) be a topological space and \\(A \\subset S\\). The boundary \\(\\partial A\\) of \\(A\\) is \\[\n\\partial A = \\overline A \\setminus A^\\circ.\n\\]\n\n\nDefinition 7 (Convergence) Let \\((S, d)\\) be a metric space. A sequence \\(\\{x_n\\}_{n \\in \\mathbb{N}} \\subset S\\) converges to a limit \\(x \\in S\\) if for any \\(\\epsilon &gt; 0\\) there exists \\(N \\in \\mathbb{N}\\) such that \\[\nd(x_n, x) &lt; \\epsilon, \\quad \\forall n \\geq N.\n\\] It is denoted as \\(x_n \\to x\\) (as \\(n \\to \\infty\\)).\n\n\nRemark. In a metric space, a limit is unique.\n\n\nDefinition 8 (Cauchy Sequence) Let \\((S, d)\\) be a metric space. A sequence \\(\\{x_n\\}_{n \\in \\mathbb{N}} \\subset S\\) is called a Cauchy sequence if for any \\(\\epsilon &gt; 0\\), there exists \\(N \\in \\mathbb{N}\\) such that \\[\n\\sup_{m, n \\geq N} d(x_m, x_n) &lt; \\epsilon.\n\\]\n\n\nTheorem 2 Let \\((S, d)\\) be a metric space, and let \\(\\{x_n\\} \\subset S\\) be a sequence.\n\nIf \\(\\{x_n\\}\\) converges, then \\(\\{x_n\\}\\) is a Cauchy sequence.\nIf \\(\\{x_n\\}\\) is a Cauchy sequence and has a convergent subsequence, then \\(\\{x_n\\}\\) converges.\n\n\n\nDefinition 9 (Completeness) A metric space \\((S, d)\\) is complete if every Cauchy sequence in \\(S\\) converges to a point of \\(S\\). A subset \\(E \\subset S\\) is complete if every Cauchy sequence in \\(E\\) converges to a point of \\(E\\).\n\n\nDefinition 10 (Open Cover) Let \\(S\\) be a topological space and \\(E \\subset S\\). An open cover of \\(E\\) is a collection \\(\\{G_\\alpha\\}_{\\alpha \\in I}\\) of open subsets of \\(S\\) such that \\(E \\subset \\bigcup_{\\alpha \\in I} G_\\alpha\\). A subcover is a subcollection \\(\\{G_\\alpha\\}_{\\alpha \\in J}\\), \\(J \\subset I\\), which is still an open cover of \\(E\\).\n\n\nDefinition 11 (Compactness) A topological space \\(S\\) is compact if every open cover has a finite subcover. A subset \\(E \\subset S\\) is compact if every open cover of \\(E\\) has a finite subcover.\n\n\nDefinition 12 (Lindelöf Space) A topological space \\(S\\) is called a Lindelöf space if every open cover has a countable subcover. A subset \\(E \\subset S\\) is Lindelöf if every open cover of \\(E\\) has a countable subcover.\n\n\nDefinition 13 (Countable Set) A set \\(A\\) is countable if there exists an injective map \\(f: A \\to \\mathbb{N}\\). A set that is not countable is uncountable.\n\n\nDefinition 14 (Dense Set) Let \\(S\\) be a topological space. A subset \\(A \\subset S\\) is dense in \\(S\\) if, for the closure \\(\\overline A\\), \\[\n\\overline A = S.\n\\]\n\n\nDefinition 15 (Separability) A topological space \\(S\\) is separable if it contains a countable dense subset. A subset \\(E \\subset S\\) is separable if it contains a countable dense subset \\(D \\subset E\\).\n\n\nTheorem 3 Let \\(S\\) be a topological space. Then, the following hold.\n\nIf \\(S\\) is a compact space, then a closed subset \\(E \\subset S\\) is compact.\nIf \\(S\\) is a Lindelöf space, then a closed subset \\(E \\subset S\\) is Lindelöf.\n\n\n\nTheorem 4 Let \\(S\\) be a metric space. Then, \\(S\\) is separable if and only if \\(S\\) is Lindelöf.\n\n\nDefinition 16 (Boundedness) Let \\((S, d)\\) be a metric space. A subset \\(E \\subset S\\) is bounded if there exists \\(r &gt; 0\\) such that \\[\nd(x, y) &lt; r, \\quad \\forall x, y \\in E.\n\\]\n\n\nDefinition 17 (Total Boundedness) Let \\((S, d)\\) be a metric space. A subset \\(E \\subset S\\) is totally bounded if, for any \\(\\epsilon &gt; 0\\), there exist finitely many points \\(x_1, \\dots, x_n \\in E\\) such that \\[\nE \\subset \\bigcup_{i=1}^n B_\\epsilon(x_i),\n\\] where \\(B_\\epsilon(x_i) = \\{x \\in S: d(x_i, x) &lt; \\epsilon\\}\\).\n\n\nTheorem 5 Every totally bounded set is bounded. The converse is not necessarily true.\n\n\nDefinition 18 (Sequential Compactness) Let \\(S\\) be a topological space. A subset \\(E \\subset S\\) is sequentially compact if every sequence in \\(E\\) has a convergent subsequence in \\(E\\).\n\n\nTheorem 6 (Heine-Borel Theorem) For a set \\(E\\) in the Euclidean space \\(\\mathbb{R}^k\\), the following are equivalent.\n\n\\(E\\) is compact.\n\\(E\\) is closed and bounded.\n\n\n\nTheorem 7 (Generalized Heine-Borel Theorem) For a set \\(E\\) in a metric space \\(S\\), the following are equivalent.\n\n\\(E\\) is compact.\n\\(E\\) is sequentially compact.\n\\(E\\) is complete and totally bounded.\n\n\n\nDefinition 19 (Polish Space) A Polish space is a topological space that is separable and metrizable in such a way that it becomes complete.\n\n\nRemark. More explicitly, a topological space \\((S, \\mathcal{T})\\) is called Polish if \\((S,\\mathcal{T})\\) is separable and there exists a metric \\(d\\) on \\(S\\) such that \\(\\mathcal{T}\\) is the topology induced by \\(d\\) and \\((S, d)\\) is complete.\n\n\nReferences\n\nRudin, W. (1976). Principles of Mathematical Analysis (3rd ed.). McGraw-Hill.\n…",
+    "text": "\\(\n\\newcommand{\\E}{\\mathbb{E}}\n\\newcommand{\\Var}{\\operatorname{Var}}\n\\newcommand{\\Cov}{\\operatorname{Cov}}\n\\newcommand{\\argmax}{\\operatorname*{arg\\,max}}\n\\newcommand{\\argmin}{\\operatorname*{arg\\,min}}\n\\newcommand{\\iid}{\\overset{\\text{iid}}{\\sim}}\n\\newcommand{\\coloneqq}{\\mathrel{\\vcenter{:}}=}\n\\)\n\n\n\n\n\n\n\nDefinition 1 (Conditional Expectation) Let \\((\\Omega, \\mathcal{F}_0, P)\\) be a given probability space. Let \\(X\\) be a \\(\\mathcal{F}_0\\)-measurable random variable with \\(\\E |X| &lt; \\infty\\). For a given \\(\\sigma\\)-field \\(\\mathcal{F} \\subset \\mathcal{F}_0\\), the conditional expectation of \\(X\\) given \\(\\mathcal{F}\\), \\(\\E[X \\mid \\mathcal{F}]\\), is a random variable \\(Y\\) such that\n\n\\(Y\\) is \\(\\mathcal{F}\\)-measurable, and\nfor all \\(A \\in \\mathcal{F}\\), \\(\\displaystyle \\int_A X dP = \\int_A Y dP\\).\n\nAny \\(Y\\) satisfying i. and ii. is said to be a version of \\(\\E[X \\mid \\mathcal{F}]\\).\n\n\nRemark. For simplicity, if \\(Y\\) is \\(\\mathcal{F}\\)-measurable, we commonly denote it as \\(Y \\in \\mathcal{F}\\).\n\n.\n.\n.\n\n\nReferences\n\nDurrett, R. (2019). Probability: Theory and Examples (5th ed.). Cambridge University Press.",
     "crumbs": [
       "Notes",
-      "Mathematics",
-      "Basic Topology of Metric Spaces"
+      "Probability Theory",
+      "Conditional Expectation"
     ]
   },
   {
-    "objectID": "notes/index.html",
-    "href": "notes/index.html",
-    "title": "Notes",
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
     "section": "",
-    "text": "\\(\n\\newcommand{\\E}{\\mathbb{E}}\n\\newcommand{\\Var}{\\operatorname{Var}}\n\\newcommand{\\Cov}{\\operatorname{Cov}}\n\\newcommand{\\argmax}{\\operatorname*{arg\\,max}}\n\\newcommand{\\argmin}{\\operatorname*{arg\\,min}}\n\\newcommand{\\iid}{\\overset{\\text{iid}}{\\sim}}\n\\newcommand{\\coloneqq}{\\mathrel{\\vcenter{:}}=}\n\\)\n\n\n\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nCategories\n\n\n\n\n\n\n\n\nNov 23, 2026\n\n\nBasic Topology of Metric Spaces\n\n\nMathematics\n\n\n\n\n\n\nNov 23, 2026\n\n\nConditional Expectation\n\n\nProbability Theory\n\n\n\n\n\n\nNov 22, 2026\n\n\nIntroduction\n\n\nStatistical Theory\n\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Notes"
-    ]
+    "text": "In preparation."
   },
   {
-    "objectID": "notes/ProbTheory/index.html",
-    "href": "notes/ProbTheory/index.html",
-    "title": "Probability Theory",
+    "objectID": "publications.html#journal-articles",
+    "href": "publications.html#journal-articles",
+    "title": "Publications",
     "section": "",
-    "text": "\\(\n\\newcommand{\\E}{\\mathbb{E}}\n\\newcommand{\\Var}{\\operatorname{Var}}\n\\newcommand{\\Cov}{\\operatorname{Cov}}\n\\newcommand{\\argmax}{\\operatorname*{arg\\,max}}\n\\newcommand{\\argmin}{\\operatorname*{arg\\,min}}\n\\newcommand{\\iid}{\\overset{\\text{iid}}{\\sim}}\n\\newcommand{\\coloneqq}{\\mathrel{\\vcenter{:}}=}\n\\)\n\n\n\n\n\nReferences\n\nDurrett, R. (2019). Probability: Theory and Examples (5th ed.). Cambridge University Press.",
-    "crumbs": [
-      "Notes",
-      "Probability Theory"
-    ]
+    "text": "In preparation."
   },
   {
-    "objectID": "blog/JournalReviews/review-bray-2023-GeroScience.html",
-    "href": "blog/JournalReviews/review-bray-2023-GeroScience.html",
-    "title": "DAP - Physical Activity and Cognitive Dysfunction",
+    "objectID": "publications.html#conference-presentations",
+    "href": "publications.html#conference-presentations",
+    "title": "Publications",
+    "section": "Conference Presentations",
+    "text": "Conference Presentations\n\nMASH diet and CCl4 interact to reshape ER protein processing in hepatocytes of an HCC mouse model\nS. Y. Oh, H. Kim, D. Park, K.-J. Oh, J. K. Seong\n35th International KOGO Annual Conference, Sep 2026 · Poster"
+  },
+  {
+    "objectID": "blog/JournalReviews/review-sabia-2017-BMJ.html",
+    "href": "blog/JournalReviews/review-sabia-2017-BMJ.html",
+    "title": "Physical Activity and Dementia Risk",
     "section": "",
-    "text": "Paper\n\n\n\n\nTitle: Associations between physical activity and cognitive dysfunction in older companion dogs: results from the Dog Aging Project\nAuthors: Bray, E.E., Raichlen, D.A., Forsyth, K.K. et al. \nVenue: GeroScience 2023\n\n\n\n\nWhy This Paper Matters\n\n\n\n\n\nResearch Question\n\n\n\n\n\nMethod\n\n\n\n\n\n\nKey Findings\n\n\n\n\n\nStrength and Limitations\n\n\nTakeaways\n\n\nReferences",
+    "text": "Paper\n\n\n\n\nTitle: Physical activity, cognitive decline, and risk of dementia: 28 year follow-up of Whitehall II cohort study\nAuthors: Sabia S, Dugravot A, Dartigues J, Abell J, Elbaz A, KivimÃ¤ki M et al. \nVenue: BMJ 2017\n\n\n\n\nResearch Question\n\n\nResearch Question\n\n\n\n\n\nMethod\n\n\n\n\n\nKey Findings\n\n\n\n\n\nStrength and Limitations\n\n\nSummary\n\n\nReferences",
     "crumbs": [
       "Blog",
       "Journal Reviews",
-      "DAP - Physical Activity and Cognitive Dysfunction"
+      "Physical Activity and Dementia Risk"
     ]
   },
   {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
+    "objectID": "blog/JournalReviews/review-hernan-2016-AmJEpidemiol.html",
+    "href": "blog/JournalReviews/review-hernan-2016-AmJEpidemiol.html",
+    "title": "Tatget Trial Emulation (TTE)",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nDAP - Physical Activity and Cognitive Dysfunction\n\n\n\nJournal Review\n\nDog Aging Project\n\nDAP\n\nPhysical Activity\n\nCognitive Dysfunction\n\n\n\n\n\n\nNov 23, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nTatget Trial Emulation (TTE)\n\n\n\nJournal Review\n\nTTE\n\n\n\n\n\n\nNov 23, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhysical Activity and Dementia Risk\n\n\n\nJournal Review\n\nPhysical Activity\n\nDementia\n\n\n\n…\n\n\n\nNov 23, 2026\n\n\n\n\n\n\nNo matching items",
+    "text": "Paper\n\n\n\n\nTitle: Using Big Data to Emulate a Target Trial When a Randomized Trial Is Not Available\nAuthors: Hernán MA, Robins JM.\nVenue: American Journal of Epdemiology\n\n\n\nThis review independently summarizes and comments on the cited article.\n\nWhy This Paper Matters\n\n\n\n\n\nResearch Question\n\n\n\n\n\nMethod\n\n\n\n\n\n\nKey Findings\n\n\n\n\n\nStrength and Limitations\n\n\nTakeaways\n\n\nReferences\n\nHernán MA, Robins JM. Using Big Data to Emulate a Target Trial When a Randomized Trial Is Not Available. Am J Epidemiol. 2016;183(8):758-764. doi:10.1093/aje/kwv254\nHernán MA, Sauer BC, Hernández-Díaz S, Platt R, Shrier I. Specifying a target trial prevents immortal time bias and other self-inflicted injuries in observational analyses. J Clin Epidemiol. 2016;79:70-75. doi:10.1016/j.jclinepi.2016.04.014\nCashin AG, Hansford HJ, Hernán MA, et al. Transparent Reporting of Observational Studies Emulating a Target Trial-The TARGET Statement. JAMA. 2025;334(12):1084-1093. doi:10.1001/jama.2025.13350",
     "crumbs": [
-      "Blog"
-    ]
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "No matching items"
-  },
-  {
-    "objectID": "labs/BioStat/Survival/index.html",
-    "href": "labs/BioStat/Survival/index.html",
-    "title": "Survival",
-    "section": "",
-    "text": "Survival analysis: censoring, Kaplan-Meier, and Cox models.",
-    "crumbs": [
-      "Labs",
-      "Biostatistics",
-      "Survival"
-    ]
-  },
-  {
-    "objectID": "labs/BioStat/DML/index.html",
-    "href": "labs/BioStat/DML/index.html",
-    "title": "DML",
-    "section": "",
-    "text": "Double/debiased machine learning for causal inference.",
-    "crumbs": [
-      "Labs",
-      "Biostatistics",
-      "DML"
-    ]
-  },
-  {
-    "objectID": "labs/index.html",
-    "href": "labs/index.html",
-    "title": "Labs",
-    "section": "",
-    "text": "Date\nTitle\nCategories\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Labs"
-    ]
-  },
-  {
-    "objectID": "labs/BioStat/TMLE/index.html",
-    "href": "labs/BioStat/TMLE/index.html",
-    "title": "TMLE",
-    "section": "",
-    "text": "Targeted maximum likelihood estimation for causal effects.",
-    "crumbs": [
-      "Labs",
-      "Biostatistics",
-      "TMLE"
-    ]
-  },
-  {
-    "objectID": "labs/BI/SingleCell/index.html",
-    "href": "labs/BI/SingleCell/index.html",
-    "title": "Single-Cell",
-    "section": "",
-    "text": "Single-cell RNA-seq analysis workflows.",
-    "crumbs": [
-      "Labs",
-      "Bioinformatics",
-      "Single-Cell"
+      "Blog",
+      "Journal Reviews",
+      "Tatget Trial Emulation (TTE)"
     ]
   },
   {
@@ -173,79 +168,109 @@
     "text": "Coursework\n\nTheory: Statistical Theory, Probability Theory, Real and Multivariate Analysis\nMethods: Machine Learning and Deep Learning for Data Science, Statistical Machine Learning, Statistical Computing\nApplications: Biostatistics, Genomic and Clinical Data Analysis, Clinical Genomic Medicine, Causal Inference"
   },
   {
-    "objectID": "blog/JournalReviews/review-hernan-2016-AmJEpidemiol.html",
-    "href": "blog/JournalReviews/review-hernan-2016-AmJEpidemiol.html",
-    "title": "Tatget Trial Emulation (TTE)",
+    "objectID": "labs/BI/SingleCell/index.html",
+    "href": "labs/BI/SingleCell/index.html",
+    "title": "Single-Cell",
     "section": "",
-    "text": "Paper\n\n\n\n\nTitle: Using Big Data to Emulate a Target Trial When a Randomized Trial Is Not Available\nAuthors: Hernán MA, Robins JM.\nVenue: American Journal of Epdemiology\n\n\n\nThis review independently summarizes and comments on the cited article.\n\nWhy This Paper Matters\n\n\n\n\n\nResearch Question\n\n\n\n\n\nMethod\n\n\n\n\n\n\nKey Findings\n\n\n\n\n\nStrength and Limitations\n\n\nTakeaways\n\n\nReferences\n\nHernán MA, Robins JM. Using Big Data to Emulate a Target Trial When a Randomized Trial Is Not Available. Am J Epidemiol. 2016;183(8):758-764. doi:10.1093/aje/kwv254\nHernán MA, Sauer BC, Hernández-Díaz S, Platt R, Shrier I. Specifying a target trial prevents immortal time bias and other self-inflicted injuries in observational analyses. J Clin Epidemiol. 2016;79:70-75. doi:10.1016/j.jclinepi.2016.04.014\nCashin AG, Hansford HJ, Hernán MA, et al. Transparent Reporting of Observational Studies Emulating a Target Trial-The TARGET Statement. JAMA. 2025;334(12):1084-1093. doi:10.1001/jama.2025.13350",
+    "text": "Single-cell RNA-seq analysis workflows.",
+    "crumbs": [
+      "Labs",
+      "Bioinformatics",
+      "Single-Cell"
+    ]
+  },
+  {
+    "objectID": "labs/BioStat/TMLE/index.html",
+    "href": "labs/BioStat/TMLE/index.html",
+    "title": "TMLE",
+    "section": "",
+    "text": "Targeted maximum likelihood estimation for causal effects.",
+    "crumbs": [
+      "Labs",
+      "Biostatistics",
+      "TMLE"
+    ]
+  },
+  {
+    "objectID": "labs/index.html",
+    "href": "labs/index.html",
+    "title": "Labs",
+    "section": "",
+    "text": "Date\nTitle\nCategories\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Labs"
+    ]
+  },
+  {
+    "objectID": "labs/BioStat/DML/index.html",
+    "href": "labs/BioStat/DML/index.html",
+    "title": "DML",
+    "section": "",
+    "text": "Double/debiased machine learning for causal inference.",
+    "crumbs": [
+      "Labs",
+      "Biostatistics",
+      "DML"
+    ]
+  },
+  {
+    "objectID": "labs/BioStat/Survival/index.html",
+    "href": "labs/BioStat/Survival/index.html",
+    "title": "Survival",
+    "section": "",
+    "text": "Survival analysis: censoring, Kaplan-Meier, and Cox models.",
+    "crumbs": [
+      "Labs",
+      "Biostatistics",
+      "Survival"
+    ]
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nDAP - Physical Activity and Cognitive Dysfunction\n\n\n\nJournal Review\n\nDog Aging Project\n\nDAP\n\nPhysical Activity\n\nCognitive Dysfunction\n\n\n\n\n\n\nNov 23, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nTatget Trial Emulation (TTE)\n\n\n\nJournal Review\n\nTTE\n\n\n\n\n\n\nNov 23, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhysical Activity and Dementia Risk\n\n\n\nJournal Review\n\nPhysical Activity\n\nDementia\n\n\n\n…\n\n\n\nNov 23, 2026\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Blog"
+    ]
+  },
+  {
+    "objectID": "blog/JournalReviews/review-bray-2023-GeroScience.html",
+    "href": "blog/JournalReviews/review-bray-2023-GeroScience.html",
+    "title": "DAP - Physical Activity and Cognitive Dysfunction",
+    "section": "",
+    "text": "Paper\n\n\n\n\nTitle: Associations between physical activity and cognitive dysfunction in older companion dogs: results from the Dog Aging Project\nAuthors: Bray, E.E., Raichlen, D.A., Forsyth, K.K. et al. \nVenue: GeroScience 2023\n\n\n\n\nWhy This Paper Matters\n\n\n\n\n\nResearch Question\n\n\n\n\n\nMethod\n\n\n\n\n\n\nKey Findings\n\n\n\n\n\nStrength and Limitations\n\n\nTakeaways\n\n\nReferences",
     "crumbs": [
       "Blog",
       "Journal Reviews",
-      "Tatget Trial Emulation (TTE)"
+      "DAP - Physical Activity and Cognitive Dysfunction"
     ]
   },
   {
-    "objectID": "blog/JournalReviews/review-sabia-2017-BMJ.html",
-    "href": "blog/JournalReviews/review-sabia-2017-BMJ.html",
-    "title": "Physical Activity and Dementia Risk",
+    "objectID": "notes/02-ProbTheory/index.html",
+    "href": "notes/02-ProbTheory/index.html",
+    "title": "Probability Theory",
     "section": "",
-    "text": "Paper\n\n\n\n\nTitle: Physical activity, cognitive decline, and risk of dementia: 28 year follow-up of Whitehall II cohort study\nAuthors: Sabia S, Dugravot A, Dartigues J, Abell J, Elbaz A, KivimÃ¤ki M et al. \nVenue: BMJ 2017\n\n\n\n\nResearch Question\n\n\nResearch Question\n\n\n\n\n\nMethod\n\n\n\n\n\nKey Findings\n\n\n\n\n\nStrength and Limitations\n\n\nSummary\n\n\nReferences",
-    "crumbs": [
-      "Blog",
-      "Journal Reviews",
-      "Physical Activity and Dementia Risk"
-    ]
-  },
-  {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
-    "section": "",
-    "text": "In preparation."
-  },
-  {
-    "objectID": "publications.html#journal-articles",
-    "href": "publications.html#journal-articles",
-    "title": "Publications",
-    "section": "",
-    "text": "In preparation."
-  },
-  {
-    "objectID": "publications.html#conference-presentations",
-    "href": "publications.html#conference-presentations",
-    "title": "Publications",
-    "section": "Conference Presentations",
-    "text": "Conference Presentations\n\nMASH diet and CCl4 interact to reshape ER protein processing in hepatocytes of an HCC mouse model\nS. Y. Oh, H. Kim, D. Park, K.-J. Oh, J. K. Seong\n35th International KOGO Annual Conference, Sep 2026 · Poster"
-  },
-  {
-    "objectID": "notes/ProbTheory/conditional.html",
-    "href": "notes/ProbTheory/conditional.html",
-    "title": "Conditional Expectation",
-    "section": "",
-    "text": "\\(\n\\newcommand{\\E}{\\mathbb{E}}\n\\newcommand{\\Var}{\\operatorname{Var}}\n\\newcommand{\\Cov}{\\operatorname{Cov}}\n\\newcommand{\\argmax}{\\operatorname*{arg\\,max}}\n\\newcommand{\\argmin}{\\operatorname*{arg\\,min}}\n\\newcommand{\\iid}{\\overset{\\text{iid}}{\\sim}}\n\\newcommand{\\coloneqq}{\\mathrel{\\vcenter{:}}=}\n\\)\n\n\n\n\n\n\n\nDefinition 1 (Conditional Expectation) Let \\((\\Omega, \\mathcal{F}_0, P)\\) be a given probability space. Let \\(X\\) be a \\(\\mathcal{F}_0\\)-measurable random variable with \\(\\E |X| &lt; \\infty\\). For a given \\(\\sigma\\)-field \\(\\mathcal{F} \\subset \\mathcal{F}_0\\), the conditional expectation of \\(X\\) given \\(\\mathcal{F}\\), \\(\\E[X \\mid \\mathcal{F}]\\), is a random variable \\(Y\\) such that\n\n\\(Y\\) is \\(\\mathcal{F}\\)-measurable, and\nfor all \\(A \\in \\mathcal{F}\\), \\(\\displaystyle \\int_A X dP = \\int_A Y dP\\).\n\nAny \\(Y\\) satisfying i. and ii. is said to be a version of \\(\\E[X \\mid \\mathcal{F}]\\).\n\n\nRemark. For simplicity, if \\(Y\\) is \\(\\mathcal{F}\\)-measurable, we commonly denote it as \\(Y \\in \\mathcal{F}\\).\n\n.\n.\n.\n\n\nReferences\n\nDurrett, R. (2019). Probability: Theory and Examples (5th ed.). Cambridge University Press.",
+    "text": "\\(\n\\newcommand{\\E}{\\mathbb{E}}\n\\newcommand{\\Var}{\\operatorname{Var}}\n\\newcommand{\\Cov}{\\operatorname{Cov}}\n\\newcommand{\\argmax}{\\operatorname*{arg\\,max}}\n\\newcommand{\\argmin}{\\operatorname*{arg\\,min}}\n\\newcommand{\\iid}{\\overset{\\text{iid}}{\\sim}}\n\\newcommand{\\coloneqq}{\\mathrel{\\vcenter{:}}=}\n\\)\n\n\n\n\n\nReferences\n\nDurrett, R. (2019). Probability: Theory and Examples (5th ed.). Cambridge University Press.",
     "crumbs": [
       "Notes",
-      "Probability Theory",
-      "Conditional Expectation"
+      "Probability Theory"
     ]
   },
   {
-    "objectID": "notes/Math/index.html",
-    "href": "notes/Math/index.html",
-    "title": "Mathematics",
-    "section": "",
-    "text": "\\(\n\\newcommand{\\E}{\\mathbb{E}}\n\\newcommand{\\Var}{\\operatorname{Var}}\n\\newcommand{\\Cov}{\\operatorname{Cov}}\n\\newcommand{\\argmax}{\\operatorname*{arg\\,max}}\n\\newcommand{\\argmin}{\\operatorname*{arg\\,min}}\n\\newcommand{\\iid}{\\overset{\\text{iid}}{\\sim}}\n\\newcommand{\\coloneqq}{\\mathrel{\\vcenter{:}}=}\n\\)\n\n\n\n\n\nReferences\n\nRudin, W. (1976). Principles of Mathematical Analysis (3rd ed.). McGraw-Hill.\n…",
-    "crumbs": [
-      "Notes",
-      "Mathematics"
-    ]
-  },
-  {
-    "objectID": "notes/StatTheory/00-intro.html",
-    "href": "notes/StatTheory/00-intro.html",
+    "objectID": "notes/03-StatTheory/00-intro.html",
+    "href": "notes/03-StatTheory/00-intro.html",
     "title": "Introduction",
     "section": "",
-    "text": "\\(\n\\newcommand{\\E}{\\mathbb{E}}\n\\newcommand{\\Var}{\\operatorname{Var}}\n\\newcommand{\\Cov}{\\operatorname{Cov}}\n\\newcommand{\\argmax}{\\operatorname*{arg\\,max}}\n\\newcommand{\\argmin}{\\operatorname*{arg\\,min}}\n\\newcommand{\\iid}{\\overset{\\text{iid}}{\\sim}}\n\\newcommand{\\coloneqq}{\\mathrel{\\vcenter{:}}=}\n\\)\n블록 양식 (번호·참조 있음: #접두어-이름 / 번호 없음: .클래스) Definition ::: {#def-이름} 참조 ?@def-이름 Theorem ::: {#thm-이름} 참조 ?@thm-이름 Lemma ::: {#lem-이름} 참조 ?@lem-이름 Corollary ::: {#cor-이름} 참조 ?@cor-이름 Example ::: {#exm-이름} 참조 ?@exm-이름 Remark ::: {.remark} Proof ::: {.proof} 블록 안 첫 줄의 “## 이름”은 괄호 속 이름으로 표시됨 → “Definition 1 (Expectation)” 수식 매크로: (notes/_macros.html 에서 추가·수정) 블록 색: notes/_boxes.css 맨 위 변수에서 수정 –&gt;",
+    "text": "\\(\n\\newcommand{\\E}{\\mathbb{E}}\n\\newcommand{\\Var}{\\operatorname{Var}}\n\\newcommand{\\Cov}{\\operatorname{Cov}}\n\\newcommand{\\argmax}{\\operatorname*{arg\\,max}}\n\\newcommand{\\argmin}{\\operatorname*{arg\\,min}}\n\\newcommand{\\iid}{\\overset{\\text{iid}}{\\sim}}\n\\newcommand{\\coloneqq}{\\mathrel{\\vcenter{:}}=}\n\\)",
     "crumbs": [
       "Notes",
       "Statistical Theory",
@@ -253,8 +278,8 @@
     ]
   },
   {
-    "objectID": "notes/StatTheory/00-intro.html#definitions-and-theorems",
-    "href": "notes/StatTheory/00-intro.html#definitions-and-theorems",
+    "objectID": "notes/03-StatTheory/00-intro.html#definitions-and-theorems",
+    "href": "notes/03-StatTheory/00-intro.html#definitions-and-theorems",
     "title": "Introduction",
     "section": "Definitions and Theorems",
     "text": "Definitions and Theorems",
@@ -265,8 +290,8 @@
     ]
   },
   {
-    "objectID": "notes/StatTheory/00-intro.html#references",
-    "href": "notes/StatTheory/00-intro.html#references",
+    "objectID": "notes/03-StatTheory/00-intro.html#references",
+    "href": "notes/03-StatTheory/00-intro.html#references",
     "title": "Introduction",
     "section": "References",
     "text": "References\n\nBillingsley, P. (1999). Convergence of Probability Measures (2nd ed.). Wiley.",
@@ -274,6 +299,64 @@
       "Notes",
       "Statistical Theory",
       "Introduction"
+    ]
+  },
+  {
+    "objectID": "notes/index.html",
+    "href": "notes/index.html",
+    "title": "Notes",
+    "section": "",
+    "text": "\\(\n\\newcommand{\\E}{\\mathbb{E}}\n\\newcommand{\\Var}{\\operatorname{Var}}\n\\newcommand{\\Cov}{\\operatorname{Cov}}\n\\newcommand{\\argmax}{\\operatorname*{arg\\,max}}\n\\newcommand{\\argmin}{\\operatorname*{arg\\,min}}\n\\newcommand{\\iid}{\\overset{\\text{iid}}{\\sim}}\n\\newcommand{\\coloneqq}{\\mathrel{\\vcenter{:}}=}\n\\)\n\n\n\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nCategories\n\n\n\n\n\n\n\n\nNov 26, 2026\n\n\nIntroduction\n\n\nSemiparametric Theory\n\n\n\n\n\n\nNov 26, 2026\n\n\nInfluence Functions\n\n\nSemiparametric Theory\n\n\n\n\n\n\nNov 23, 2026\n\n\nBasic Topology of Metric Spaces\n\n\nMathematics\n\n\n\n\n\n\nNov 23, 2026\n\n\nConditional Expectation\n\n\nProbability Theory\n\n\n\n\n\n\nNov 22, 2026\n\n\nIntroduction\n\n\nStatistical Theory\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Notes"
+    ]
+  },
+  {
+    "objectID": "notes/01-Math/basic-topology.html",
+    "href": "notes/01-Math/basic-topology.html",
+    "title": "Basic Topology of Metric Spaces",
+    "section": "",
+    "text": "\\(\n\\newcommand{\\E}{\\mathbb{E}}\n\\newcommand{\\Var}{\\operatorname{Var}}\n\\newcommand{\\Cov}{\\operatorname{Cov}}\n\\newcommand{\\argmax}{\\operatorname*{arg\\,max}}\n\\newcommand{\\argmin}{\\operatorname*{arg\\,min}}\n\\newcommand{\\iid}{\\overset{\\text{iid}}{\\sim}}\n\\newcommand{\\coloneqq}{\\mathrel{\\vcenter{:}}=}\n\\)\n\n\n\n\n\n\nDraft\n…\n\nDefinition 1 (Topology and Topological Space) A topological space is a pair \\((S, \\mathcal{T})\\), where \\(S\\) is a set and \\(\\mathcal{T}\\) is a collection of subsets of \\(S\\) (called open sets) satisfying:\n\n\\(\\varnothing, S \\in \\mathcal{T}\\),\nany union of members of \\(\\mathcal{T}\\) is in \\(\\mathcal{T}\\),\nany finite intersection of members of \\(\\mathcal{T}\\) is in \\(\\mathcal{T}\\).\n\nWe call \\(\\mathcal{T}\\) a topology on \\(S\\). A set \\(F \\subset S\\) is closed if \\(S \\setminus F \\in \\mathcal{T}\\).\n\n\nDefinition 2 (Metric and Metric Spaces) A metric on a set \\(S\\) is a function \\(d: S \\times S \\to [0, \\infty)\\) that satisfies\n\n\\(d(x_1, x_2) = 0\\) if and only if \\(x_1 = x_2\\),\n\\(d(x_1, x_2) = d(x_2, x_1)\\), and\n\\(d(x_1, x_3) \\leq d(x_1, x_2) + d(x_2, x_3)\\),\n\nfor \\(x_1, x_2, x_3 \\in S\\). We call the pair \\((S, d)\\) a metric space.\n\n\nTheorem 1 A metric space \\((S,d)\\) induces a topological space \\((S, \\mathcal{T}_d)\\), where \\[\n\\mathcal{T}_d \\coloneqq \\{E \\subset S : E \\text{ is open with respect to } d\\}.\n\\]\n\n\nDefinition 3 (Openness and Closedness) Let \\((S, d)\\) be a metric space with \\(E \\subset S\\). Then \\(E\\) is said to be open if for every \\(e \\in E\\), there exists an \\(\\epsilon &gt; 0\\) such that \\(\\{x \\in S: d(x, e) &lt; \\epsilon\\} \\subset E\\). The subset \\(E\\) is closed if \\(S \\setminus E\\) is open.\n\n\nRemark. The definitions of openness or closedness in topological spaces are equivalent with ones in metric spaces.\n\n\nDefinition 4 (Closure) Let \\(S\\) be a topological space and \\(A \\subset S\\). The closure \\(\\overline{A}\\) of \\(A\\) is the intersection of all closed subsets of \\(S\\) containing \\(A\\), i.e., the smallest closed set containing \\(A\\).\n\n\nDefinition 5 (Interior) Let \\(S\\) be a topological space and \\(A \\subset S\\). The interior \\(A^\\circ\\) of \\(A\\) is the union of all open subsets of \\(S\\) contained in \\(A\\), i.e., the largest open set contained in \\(A\\).\n\n\nDefinition 6 (Boundary) Let \\(S\\) be a topological space and \\(A \\subset S\\). The boundary \\(\\partial A\\) of \\(A\\) is \\[\n\\partial A = \\overline A \\setminus A^\\circ.\n\\]\n\n\nDefinition 7 (Convergence) Let \\((S, d)\\) be a metric space. A sequence \\(\\{x_n\\}_{n \\in \\mathbb{N}} \\subset S\\) converges to a limit \\(x \\in S\\) if for any \\(\\epsilon &gt; 0\\) there exists \\(N \\in \\mathbb{N}\\) such that \\[\nd(x_n, x) &lt; \\epsilon, \\quad \\forall n \\geq N.\n\\] It is denoted as \\(x_n \\to x\\) (as \\(n \\to \\infty\\)).\n\n\nRemark. In a metric space, a limit is unique.\n\n\nDefinition 8 (Cauchy Sequence) Let \\((S, d)\\) be a metric space. A sequence \\(\\{x_n\\}_{n \\in \\mathbb{N}} \\subset S\\) is called a Cauchy sequence if for any \\(\\epsilon &gt; 0\\), there exists \\(N \\in \\mathbb{N}\\) such that \\[\n\\sup_{m, n \\geq N} d(x_m, x_n) &lt; \\epsilon.\n\\]\n\n\nTheorem 2 Let \\((S, d)\\) be a metric space, and let \\(\\{x_n\\} \\subset S\\) be a sequence.\n\nIf \\(\\{x_n\\}\\) converges, then \\(\\{x_n\\}\\) is a Cauchy sequence.\nIf \\(\\{x_n\\}\\) is a Cauchy sequence and has a convergent subsequence, then \\(\\{x_n\\}\\) converges.\n\n\n\nDefinition 9 (Completeness) A metric space \\((S, d)\\) is complete if every Cauchy sequence in \\(S\\) converges to a point of \\(S\\). A subset \\(E \\subset S\\) is complete if every Cauchy sequence in \\(E\\) converges to a point of \\(E\\).\n\n\nDefinition 10 (Open Cover) Let \\(S\\) be a topological space and \\(E \\subset S\\). An open cover of \\(E\\) is a collection \\(\\{G_\\alpha\\}_{\\alpha \\in I}\\) of open subsets of \\(S\\) such that \\(E \\subset \\bigcup_{\\alpha \\in I} G_\\alpha\\). A subcover is a subcollection \\(\\{G_\\alpha\\}_{\\alpha \\in J}\\), \\(J \\subset I\\), which is still an open cover of \\(E\\).\n\n\nDefinition 11 (Compactness) A topological space \\(S\\) is compact if every open cover has a finite subcover. A subset \\(E \\subset S\\) is compact if every open cover of \\(E\\) has a finite subcover.\n\n\nDefinition 12 (Lindelöf Space) A topological space \\(S\\) is called a Lindelöf space if every open cover has a countable subcover. A subset \\(E \\subset S\\) is Lindelöf if every open cover of \\(E\\) has a countable subcover.\n\n\nDefinition 13 (Countable Set) A set \\(A\\) is countable if there exists an injective map \\(f: A \\to \\mathbb{N}\\). A set that is not countable is uncountable.\n\n\nDefinition 14 (Dense Set) Let \\(S\\) be a topological space. A subset \\(A \\subset S\\) is dense in \\(S\\) if, for the closure \\(\\overline A\\), \\[\n\\overline A = S.\n\\]\n\n\nDefinition 15 (Separability) A topological space \\(S\\) is separable if it contains a countable dense subset. A subset \\(E \\subset S\\) is separable if it contains a countable dense subset \\(D \\subset E\\).\n\n\nTheorem 3 Let \\(S\\) be a topological space. Then, the following hold.\n\nIf \\(S\\) is a compact space, then a closed subset \\(E \\subset S\\) is compact.\nIf \\(S\\) is a Lindelöf space, then a closed subset \\(E \\subset S\\) is Lindelöf.\n\n\n\nTheorem 4 Let \\(S\\) be a metric space. Then, \\(S\\) is separable if and only if \\(S\\) is Lindelöf.\n\n\nDefinition 16 (Boundedness) Let \\((S, d)\\) be a metric space. A subset \\(E \\subset S\\) is bounded if there exists \\(r &gt; 0\\) such that \\[\nd(x, y) &lt; r, \\quad \\forall x, y \\in E.\n\\]\n\n\nDefinition 17 (Total Boundedness) Let \\((S, d)\\) be a metric space. A subset \\(E \\subset S\\) is totally bounded if, for any \\(\\epsilon &gt; 0\\), there exist finitely many points \\(x_1, \\dots, x_n \\in E\\) such that \\[\nE \\subset \\bigcup_{i=1}^n B_\\epsilon(x_i),\n\\] where \\(B_\\epsilon(x_i) = \\{x \\in S: d(x_i, x) &lt; \\epsilon\\}\\).\n\n\nTheorem 5 Every totally bounded set is bounded. The converse is not necessarily true.\n\n\nDefinition 18 (Sequential Compactness) Let \\(S\\) be a topological space. A subset \\(E \\subset S\\) is sequentially compact if every sequence in \\(E\\) has a convergent subsequence in \\(E\\).\n\n\nTheorem 6 (Heine-Borel Theorem) For a set \\(E\\) in the Euclidean space \\(\\mathbb{R}^k\\), the following are equivalent.\n\n\\(E\\) is compact.\n\\(E\\) is closed and bounded.\n\n\n\nTheorem 7 (Generalized Heine-Borel Theorem) For a set \\(E\\) in a metric space \\(S\\), the following are equivalent.\n\n\\(E\\) is compact.\n\\(E\\) is sequentially compact.\n\\(E\\) is complete and totally bounded.\n\n\n\nDefinition 19 (Polish Space) A Polish space is a topological space that is separable and metrizable in such a way that it becomes complete.\n\n\nRemark. More explicitly, a topological space \\((S, \\mathcal{T})\\) is called Polish if \\((S,\\mathcal{T})\\) is separable and there exists a metric \\(d\\) on \\(S\\) such that \\(\\mathcal{T}\\) is the topology induced by \\(d\\) and \\((S, d)\\) is complete.\n\n\nReferences\n\nRudin, W. (1976). Principles of Mathematical Analysis (3rd ed.). McGraw-Hill.\n…",
+    "crumbs": [
+      "Notes",
+      "Mathematics",
+      "Basic Topology of Metric Spaces"
+    ]
+  },
+  {
+    "objectID": "notes/04-Semiparametric/01-influence-functions.html",
+    "href": "notes/04-Semiparametric/01-influence-functions.html",
+    "title": "Influence Functions",
+    "section": "",
+    "text": "\\(\n\\newcommand{\\E}{\\mathbb{E}}\n\\newcommand{\\Var}{\\operatorname{Var}}\n\\newcommand{\\Cov}{\\operatorname{Cov}}\n\\newcommand{\\argmax}{\\operatorname*{arg\\,max}}\n\\newcommand{\\argmin}{\\operatorname*{arg\\,min}}\n\\newcommand{\\iid}{\\overset{\\text{iid}}{\\sim}}\n\\newcommand{\\coloneqq}{\\mathrel{\\vcenter{:}}=}\n\\)",
+    "crumbs": [
+      "Notes",
+      "Semiparametric Theory",
+      "Influence Functions"
+    ]
+  },
+  {
+    "objectID": "notes/04-Semiparametric/01-influence-functions.html#introduction",
+    "href": "notes/04-Semiparametric/01-influence-functions.html#introduction",
+    "title": "Influence Functions",
+    "section": "Introduction",
+    "text": "Introduction\nLet \\((\\mathcal{Z}, \\mathcal{A}, P)\\) be a probability space, and let \\(Z\\) be a random vector taking values in \\(\\mathcal{Z}\\) with distribution \\(P\\). Let \\(Z_1, \\dots, Z_n\\) be i.i.d. copies of \\(Z\\). Suppose the density of \\(Z\\) belongs to the class \\(\\{p_Z(z; \\theta): \\theta \\in \\Theta\\}\\). Suppose the parameter \\(\\theta\\) can be written as \\(\\theta = (\\beta^\\top, \\eta^\\top)^\\top\\), where \\(\\beta \\in \\mathbb{R}^q\\) is the parameter of interest and \\(\\eta\\) is the nuisance parameter that is finite- or infinite-dimensional. The true parameter is denoted by \\(\\theta_0 = (\\beta_0^\\top, \\eta_0^\\top)^\\top\\).\nConsider the space \\(\\mathcal{H}\\) of measurable functions \\(\\varphi: \\mathcal{Z} \\to \\mathbb{R}^q\\) such that\n\\[\n\\mathcal{H} \\coloneqq \\{\\varphi: \\E_P[\\varphi(Z)] = 0^{q \\times 1}, \\; \\E_P[\\varphi(Z)^\\top \\varphi(Z)] &lt; \\infty \\},\n\\]\nwhich is equipped with a covariance inner product \\(\\langle \\varphi_1, \\varphi_2 \\rangle \\coloneqq \\E_P[\\varphi_1^\\top \\varphi_2]\\) and its induced norm \\(\\| \\cdot \\|\\). We have shown that \\(\\mathcal{H}\\) becomes a Hilbert space. (*) When there is no ambiguity, we write \\(\\E\\) for \\(\\E_P\\) and \\(\\E \\varphi\\) for \\(\\E [\\varphi(Z)]\\).\nIn this section, we consider finite-dimensional parametric models where\n\\[\n\\theta\\in\\Theta\\subseteq\\mathbb{R}^p,\\quad\n\\beta\\in\\mathbb{R}^q,\\quad\n\\eta\\in\\mathbb{R}^r,\n\\quad p=q+r.\n\\]\nMost reasonable estimators \\(\\hat \\beta_n\\) for \\(\\beta\\) are asymptotically linear, that is, they can be uniquely characterized by the influence function of the estimator.\n\nDefinition 1 (Asymptotically Linear) An estimator \\(\\hat \\beta_n\\) of \\(\\beta\\) is said to be asymptotically linear if there exists a function \\(\\varphi \\in \\mathcal{H}\\) (i.e., \\(\\E \\varphi = 0\\) and \\(\\E [\\varphi^\\top \\varphi] &lt; \\infty\\)) such that\n\\[\nn^{1/2} (\\hat \\beta_n - \\beta_0) = n^{-1/2} \\sum_{i=1}^n \\varphi(Z_i) + o_p(1),\n\\]\nwhere \\(o_p(1) \\xrightarrow{p} 0\\) as \\(n \\to \\infty\\). Here, \\(\\varphi\\) is called the influence function of the estimator \\(\\hat \\beta_n\\).\n\n\nProposition 1 For an asymptotically linear estimator \\(\\hat \\beta_n\\) of \\(\\beta_0\\) and its influence function \\(\\varphi \\in \\mathcal{H}\\), it holds\n\\[\nn^{1/2} (\\hat \\beta_n - \\beta_0) \\rightsquigarrow N \\left(0, \\E [\\varphi \\varphi^\\top] \\right).\n\\]\n\n\nProof. By the central limit theorem, it holds\n\\[\nn^{-1/2} \\sum_{i=1}^n \\varphi(Z_i) \\rightsquigarrow N \\left(0, \\E [\\varphi \\varphi^\\top] \\right).\n\\]\nThen, by Slutsky’s theorem, it follows \\(n^{1/2} (\\hat \\beta_n - \\beta_0) \\rightsquigarrow N \\left(0, \\E [\\varphi \\varphi^\\top] \\right)\\).\n\n\nExample 1 Let \\(Z_1, \\dots, Z_n \\iid N(\\mu, \\sigma^2)\\). The maximum likelihood estimators for \\(\\mu\\) and \\(\\sigma^2\\) are given as\n\\[\n\\hat \\mu_n = n^{-1} \\sum_{i=1}^n Z_i, \\qquad \\hat \\sigma_n^2 = n^{-1} \\sum_{i=1}^n (Z_i - \\hat \\mu_n)^2.\n\\]\nThen, we can write the expressions as\n\\[\nn^{1/2} (\\hat \\mu_n - \\mu_0) = n^{-1/2} \\sum_{i=1}^n (Z_i - \\mu_0),\n\\]\nand\n\\[\nn^{1/2} (\\hat \\sigma_n^2 - \\sigma_0^2) = n^{-1/2} \\sum_{i=1}^n \\{(Z_i  - \\mu_0)^2 - \\sigma_0^2\\} - n^{1/2} (\\hat \\mu_n - \\mu_0)^2.\n\\]\nSince \\(n^{1/2}(\\hat \\mu_n - \\mu_0) = O_p(1)\\) and \\((\\hat \\mu_n - \\mu_0) = o_p(1)\\), \\(n^{1/2} (\\hat \\mu_n - \\mu_0)^2 = o_p(1)\\). Therefore, both \\(\\hat \\mu_n\\) and \\(\\hat \\sigma_n^2\\) are asymptotically linear, and their influence functions are given as\n\\[\n\\varphi_1(Z_i) = (Z_i - \\mu_0), \\qquad \\varphi_2(Z_i) = \\{(Z_i  - \\mu_0)^2 - \\sigma_0^2\\},\n\\]\nrespectively.\n\n\nTheorem 1 An asymptotically linear estimator has a unique (a.s.) influence function.\n\n\nProof. Let \\(\\varphi, \\varphi' \\in \\mathcal{H}\\) be two influence functions of an estimator \\(\\hat \\beta_n\\). Then, it holds\n\\[\n\\begin{aligned}\nn^{1/2} (\\hat \\beta_n - \\beta) &= n^{-1/2} \\sum_{i=1}^n \\varphi(Z_i) + o_p(1), \\\\\nn^{1/2} (\\hat \\beta_n - \\beta) &= n^{-1/2} \\sum_{i=1}^n \\varphi'(Z_i) + o_p(1),\n\\end{aligned}\n\\]\nand thus\n\\[\nn^{-1/2} \\sum_{i=1}^n \\{\\varphi(Z_i) - \\varphi'(Z_i)\\} = o_p(1).\n\\]\nBy the central limit theorem, \\(n^{-1/2} \\sum_{i=1}^n \\{\\varphi(Z_i) - \\varphi'(Z_i)\\} \\rightsquigarrow N(0, \\E[(\\varphi - \\varphi')(\\varphi - \\varphi')^\\top])\\). That is, \\(\\E[(\\varphi - \\varphi')(\\varphi - \\varphi')^\\top] = 0^{q \\times q}\\) and thus \\(\\varphi = \\varphi'\\) a.s.\n\n\nExample 2 (Super-efficiency and Hodges’ Estimator) Let \\(Z_1, \\dots, Z_n \\iid N(\\mu, 1)\\), \\(\\mu \\in \\mathbb{R}\\). The maximum likelihood estimator (MLE) of \\(\\mu\\) is given by \\(\\bar Z_n \\coloneqq n^{-1} \\sum_{i=1}^n Z_i\\), and we have\n\\[\nn^{1/2} (\\bar Z_n - \\mu) \\rightsquigarrow N(0, 1).\n\\]\nConsider an estimator \\(\\hat \\mu_n\\) defined as\n\\[\n\\hat \\mu_n = \\begin{cases}\n    \\bar Z_n, & |\\bar Z_n| &gt; n^{-1/4} \\\\\n    0, & |\\bar Z_n| \\leq n^{-1/4}\n\\end{cases}.\n\\]\nWhen \\(\\mu \\neq 0\\),\n\\[\nn^{1/2}(\\hat \\mu_n - \\mu) \\rightsquigarrow N(0, 1).\n\\]\nWhen \\(\\mu = 0\\),\n\\[\nn^{1/2}(\\hat \\mu_n - \\mu) \\rightsquigarrow N(0, 0).\n\\]\nRecall that the MLE is asymptotically efficient. That is, the MLE asymptotically achieves the Cramér–Rao lower bound, in this case, the variance \\(1\\) of \\(N(0, 1)\\). However, \\(\\hat \\mu_n\\) has a smaller variance than \\(1\\) when \\(\\mu = 0\\). Such estimators are said to be super-efficient. Although they seem to be efficient, they have undesirable local properties (Tsiatis, 2006).\n\n\nDefinition 2 (Regularity) Consider a local data generating process (LDGP), where, for each \\(n\\), the data are distributed according to \\(\\theta_n\\), where \\(n^{1/2} (\\theta_n - \\theta^*)\\) converges to a constant for some fixed parameter \\(\\theta^*\\). That is,\n\\[\nZ_{n1}, \\dots, Z_{nn} \\iid p(z, \\theta_n),\n\\]\nwhere\n\\[\n\\theta_n = (\\beta_n^\\top, \\eta_n^\\top)^\\top, \\quad \\theta^* = ((\\beta^*)^\\top, (\\eta^*)^\\top)^\\top.\n\\]\nAn estimator \\(\\hat \\beta_n = \\hat \\beta_n(Z_{n1}, \\dots, Z_{nn})\\) is said to be regular if, for each \\(\\theta^*\\), \\(n^{1/2}(\\hat \\beta_n - \\beta_n)\\) has a limiting distribution that does not depend on the LDGP.\n\n\nRemark. We only consider regular and asymptotically linear (RAL) estimators in what follows.",
+    "crumbs": [
+      "Notes",
+      "Semiparametric Theory",
+      "Influence Functions"
+    ]
+  },
+  {
+    "objectID": "notes/04-Semiparametric/01-influence-functions.html#references",
+    "href": "notes/04-Semiparametric/01-influence-functions.html#references",
+    "title": "Influence Functions",
+    "section": "References",
+    "text": "References\n\nTsiatis, A. A. (2006). Semiparametric Theory and Missing Data. Springer.",
+    "crumbs": [
+      "Notes",
+      "Semiparametric Theory",
+      "Influence Functions"
     ]
   }
 ]

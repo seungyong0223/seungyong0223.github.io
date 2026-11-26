@@ -7,9 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="SeungYong Oh">
-<meta name="dcterms.date" content="2026-11-23">
+<meta name="dcterms.date" content="2026-11-26">
+<meta name="description" content="Asymptotically linear estimators, influence functions, and regularity">
 
-<title>Basic Topology of Metric Spaces – SeungYong Oh</title>
+<title>Influence Functions – SeungYong Oh</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -107,11 +108,11 @@ window.Quarto = {
 
 <link rel="stylesheet" href="../../styles.css">
 <link rel="stylesheet" href="../_boxes.css">
-<meta property="og:title" content="Basic Topology of Metric Spaces – SeungYong Oh">
-<meta property="og:description" content="">
+<meta property="og:title" content="Influence Functions – SeungYong Oh">
+<meta property="og:description" content="Asymptotically linear estimators, influence functions, and regularity">
 <meta property="og:site_name" content="SeungYong Oh">
-<meta name="twitter:title" content="Basic Topology of Metric Spaces – SeungYong Oh">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="Influence Functions – SeungYong Oh">
+<meta name="twitter:description" content="Asymptotically linear estimators, influence functions, and regularity">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -336,7 +337,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notes/Math/index.html">Mathematics</a></li><li class="breadcrumb-item"><a href="../../notes/Math/basic-topology.html">Basic Topology of Metric Spaces</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notes/04-Semiparametric/index.html">Semiparametric Theory</a></li><li class="breadcrumb-item"><a href="../../notes/04-Semiparametric/01-influence-functions.html">Influence Functions</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -356,16 +357,16 @@ window.Quarto = {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../notes/Math/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../notes/01-Math/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Mathematics</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../notes/Math/basic-topology.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../notes/01-Math/basic-topology.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Basic Topology of Metric Spaces</span></a>
   </div>
 </li>
@@ -373,8 +374,8 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../notes/StatTheory/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Statistical Theory</span></a>
+            <a href="../../notes/02-ProbTheory/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Probability Theory</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -382,16 +383,16 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../notes/StatTheory/00-intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction</span></a>
+  <a href="../../notes/02-ProbTheory/conditional.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conditional Expectation</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../notes/ProbTheory/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Probability Theory</span></a>
+            <a href="../../notes/03-StatTheory/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Statistical Theory</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -399,8 +400,31 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../notes/ProbTheory/conditional.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Conditional Expectation</span></a>
+  <a href="../../notes/03-StatTheory/00-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../notes/04-Semiparametric/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Semiparametric Theory</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../notes/04-Semiparametric/00-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../notes/04-Semiparametric/01-influence-functions.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Influence Functions</span></a>
   </div>
 </li>
       </ul>
@@ -415,7 +439,8 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#references" id="toc-references" class="nav-link active" data-scroll-target="#references">References</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
     </div>
@@ -440,14 +465,19 @@ window.Quarto = {
 \)
 </div>
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notes/Math/index.html">Mathematics</a></li><li class="breadcrumb-item"><a href="../../notes/Math/basic-topology.html">Basic Topology of Metric Spaces</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notes/04-Semiparametric/index.html">Semiparametric Theory</a></li><li class="breadcrumb-item"><a href="../../notes/04-Semiparametric/01-influence-functions.html">Influence Functions</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Basic Topology of Metric Spaces</h1>
+<h1 class="title">Influence Functions</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Mathematics</div>
+    <div class="quarto-category">Semiparametric Theory</div>
   </div>
   </div>
 
+<div>
+  <div class="description">
+    Asymptotically linear estimators, influence functions, and regularity
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -462,7 +492,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 23, 2026</p>
+      <p class="date">November 26, 2026</p>
     </div>
   </div>
   
@@ -474,156 +504,119 @@ window.Quarto = {
 </header>
 
 
-<!--
-블록 양식 (번호·참조 있음: #접두어-이름 / 번호 없음: .클래스)
-  Definition  ::: {#def-이름}    참조 @def-이름
-  Theorem     ::: {#thm-이름}    참조 @thm-이름
-  Lemma       ::: {#lem-이름}    참조 @lem-이름
-  Corollary   ::: {#cor-이름}    참조 @cor-이름
-  Example     ::: {#exm-이름}    참조 @exm-이름
-  Remark      ::: {.remark}
-  Proof       ::: {.proof}
-블록 안 첫 줄의 "## 이름"은 괄호 속 이름으로 표시됨 → "Definition 1 (Expectation)"
-수식 매크로: \E \Var \Cov \argmax \argmin \iid \coloneqq  (notes/_macros.html 에서 추가·수정)
-블록 색: notes/_boxes.css 맨 위 변수에서 수정
--->
-<p>Draft</p>
-<p>…</p>
-<div id="def-topological-space" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 1 (Topology and Topological Space)</strong></span> A <em>topological space</em> is a pair <span class="math inline">\((S, \mathcal{T})\)</span>, where <span class="math inline">\(S\)</span> is a set and <span class="math inline">\(\mathcal{T}\)</span> is a collection of subsets of <span class="math inline">\(S\)</span> (called <em>open sets</em>) satisfying:</p>
-<ol type="a">
-<li><span class="math inline">\(\varnothing, S \in \mathcal{T}\)</span>,</li>
-<li>any union of members of <span class="math inline">\(\mathcal{T}\)</span> is in <span class="math inline">\(\mathcal{T}\)</span>,</li>
-<li>any finite intersection of members of <span class="math inline">\(\mathcal{T}\)</span> is in <span class="math inline">\(\mathcal{T}\)</span>.</li>
-</ol>
-<p>We call <span class="math inline">\(\mathcal{T}\)</span> a <em>topology</em> on <span class="math inline">\(S\)</span>. A set <span class="math inline">\(F \subset S\)</span> is <em>closed</em> if <span class="math inline">\(S \setminus F \in \mathcal{T}\)</span>.</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Let <span class="math inline">\((\mathcal{Z}, \mathcal{A}, P)\)</span> be a probability space, and let <span class="math inline">\(Z\)</span> be a random vector taking values in <span class="math inline">\(\mathcal{Z}\)</span> with distribution <span class="math inline">\(P\)</span>. Let <span class="math inline">\(Z_1, \dots, Z_n\)</span> be i.i.d. copies of <span class="math inline">\(Z\)</span>. Suppose the density of <span class="math inline">\(Z\)</span> belongs to the class <span class="math inline">\(\{p_Z(z; \theta): \theta \in \Theta\}\)</span>. Suppose the parameter <span class="math inline">\(\theta\)</span> can be written as <span class="math inline">\(\theta = (\beta^\top, \eta^\top)^\top\)</span>, where <span class="math inline">\(\beta \in \mathbb{R}^q\)</span> is the parameter of interest and <span class="math inline">\(\eta\)</span> is the nuisance parameter that is finite- or infinite-dimensional. The true parameter is denoted by <span class="math inline">\(\theta_0 = (\beta_0^\top, \eta_0^\top)^\top\)</span>.</p>
+<p>Consider the space <span class="math inline">\(\mathcal{H}\)</span> of measurable functions <span class="math inline">\(\varphi: \mathcal{Z} \to \mathbb{R}^q\)</span> such that</p>
+<p><span class="math display">\[
+\mathcal{H} \coloneqq \{\varphi: \E_P[\varphi(Z)] = 0^{q \times 1}, \; \E_P[\varphi(Z)^\top \varphi(Z)] &lt; \infty \},
+\]</span></p>
+<p>which is equipped with a covariance inner product <span class="math inline">\(\langle \varphi_1, \varphi_2 \rangle \coloneqq \E_P[\varphi_1^\top \varphi_2]\)</span> and its induced norm <span class="math inline">\(\| \cdot \|\)</span>. We have shown that <span class="math inline">\(\mathcal{H}\)</span> becomes a Hilbert space. (*) When there is no ambiguity, we write <span class="math inline">\(\E\)</span> for <span class="math inline">\(\E_P\)</span> and <span class="math inline">\(\E \varphi\)</span> for <span class="math inline">\(\E [\varphi(Z)]\)</span>.</p>
+<p>In this section, we consider finite-dimensional parametric models where</p>
+<p><span class="math display">\[
+\theta\in\Theta\subseteq\mathbb{R}^p,\quad
+\beta\in\mathbb{R}^q,\quad
+\eta\in\mathbb{R}^r,
+\quad p=q+r.
+\]</span></p>
+<p>Most reasonable estimators <span class="math inline">\(\hat \beta_n\)</span> for <span class="math inline">\(\beta\)</span> are asymptotically linear, that is, they can be uniquely characterized by the influence function of the estimator.</p>
+<div id="def-asymptotically-linear" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 1 (Asymptotically Linear)</strong></span> An estimator <span class="math inline">\(\hat \beta_n\)</span> of <span class="math inline">\(\beta\)</span> is said to be <em>asymptotically linear</em> if there exists a function <span class="math inline">\(\varphi \in \mathcal{H}\)</span> (i.e., <span class="math inline">\(\E \varphi = 0\)</span> and <span class="math inline">\(\E [\varphi^\top \varphi] &lt; \infty\)</span>) such that</p>
+<p><span class="math display">\[
+n^{1/2} (\hat \beta_n - \beta_0) = n^{-1/2} \sum_{i=1}^n \varphi(Z_i) + o_p(1),
+\]</span></p>
+<p>where <span class="math inline">\(o_p(1) \xrightarrow{p} 0\)</span> as <span class="math inline">\(n \to \infty\)</span>. Here, <span class="math inline">\(\varphi\)</span> is called the <em>influence function</em> of the estimator <span class="math inline">\(\hat \beta_n\)</span>.</p>
 </div>
-<div id="def-metric-space" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 2 (Metric and Metric Spaces)</strong></span> A <em>metric</em> on a set <span class="math inline">\(S\)</span> is a function <span class="math inline">\(d: S \times S \to [0, \infty)\)</span> that satisfies</p>
-<ol type="a">
-<li><span class="math inline">\(d(x_1, x_2) = 0\)</span> if and only if <span class="math inline">\(x_1 = x_2\)</span>,</li>
-<li><span class="math inline">\(d(x_1, x_2) = d(x_2, x_1)\)</span>, and</li>
-<li><span class="math inline">\(d(x_1, x_3) \leq d(x_1, x_2) + d(x_2, x_3)\)</span>,</li>
-</ol>
-<p>for <span class="math inline">\(x_1, x_2, x_3 \in S\)</span>. We call the pair <span class="math inline">\((S, d)\)</span> a <em>metric space</em>.</p>
-</div>
-<div id="thm-metric-topology" class="theorem">
-<p><span class="theorem-title"><strong>Theorem 1</strong></span> A metric space <span class="math inline">\((S,d)\)</span> induces a topological space <span class="math inline">\((S, \mathcal{T}_d)\)</span>, where <span class="math display">\[
-\mathcal{T}_d \coloneqq \{E \subset S : E \text{ is open with respect to } d\}.
+<div id="prp-al-normality" class="theorem proposition">
+<p><span class="theorem-title"><strong>Proposition 1</strong></span> For an asymptotically linear estimator <span class="math inline">\(\hat \beta_n\)</span> of <span class="math inline">\(\beta_0\)</span> and its influence function <span class="math inline">\(\varphi \in \mathcal{H}\)</span>, it holds</p>
+<p><span class="math display">\[
+n^{1/2} (\hat \beta_n - \beta_0) \rightsquigarrow N \left(0, \E [\varphi \varphi^\top] \right).
 \]</span></p>
 </div>
-<div id="def-open-closed" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 3 (Openness and Closedness)</strong></span> Let <span class="math inline">\((S, d)\)</span> be a metric space with <span class="math inline">\(E \subset S\)</span>. Then <span class="math inline">\(E\)</span> is said to be <em>open</em> if for every <span class="math inline">\(e \in E\)</span>, there exists an <span class="math inline">\(\epsilon &gt; 0\)</span> such that <span class="math inline">\(\{x \in S: d(x, e) &lt; \epsilon\} \subset E\)</span>. The subset <span class="math inline">\(E\)</span> is <em>closed</em> if <span class="math inline">\(S \setminus E\)</span> is open.</p>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span>By the central limit theorem, it holds</p>
+<p><span class="math display">\[
+n^{-1/2} \sum_{i=1}^n \varphi(Z_i) \rightsquigarrow N \left(0, \E [\varphi \varphi^\top] \right).
+\]</span></p>
+<p>Then, by Slutsky’s theorem, it follows <span class="math inline">\(n^{1/2} (\hat \beta_n - \beta_0) \rightsquigarrow N \left(0, \E [\varphi \varphi^\top] \right)\)</span>.</p>
+</div>
+<div id="exm-normal-mle" class="theorem example">
+<p><span class="theorem-title"><strong>Example 1</strong></span> Let <span class="math inline">\(Z_1, \dots, Z_n \iid N(\mu, \sigma^2)\)</span>. The maximum likelihood estimators for <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\sigma^2\)</span> are given as</p>
+<p><span class="math display">\[
+\hat \mu_n = n^{-1} \sum_{i=1}^n Z_i, \qquad \hat \sigma_n^2 = n^{-1} \sum_{i=1}^n (Z_i - \hat \mu_n)^2.
+\]</span></p>
+<p>Then, we can write the expressions as</p>
+<p><span class="math display">\[
+n^{1/2} (\hat \mu_n - \mu_0) = n^{-1/2} \sum_{i=1}^n (Z_i - \mu_0),
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+n^{1/2} (\hat \sigma_n^2 - \sigma_0^2) = n^{-1/2} \sum_{i=1}^n \{(Z_i  - \mu_0)^2 - \sigma_0^2\} - n^{1/2} (\hat \mu_n - \mu_0)^2.
+\]</span></p>
+<p>Since <span class="math inline">\(n^{1/2}(\hat \mu_n - \mu_0) = O_p(1)\)</span> and <span class="math inline">\((\hat \mu_n - \mu_0) = o_p(1)\)</span>, <span class="math inline">\(n^{1/2} (\hat \mu_n - \mu_0)^2 = o_p(1)\)</span>. Therefore, both <span class="math inline">\(\hat \mu_n\)</span> and <span class="math inline">\(\hat \sigma_n^2\)</span> are asymptotically linear, and their influence functions are given as</p>
+<p><span class="math display">\[
+\varphi_1(Z_i) = (Z_i - \mu_0), \qquad \varphi_2(Z_i) = \{(Z_i  - \mu_0)^2 - \sigma_0^2\},
+\]</span></p>
+<p>respectively.</p>
+</div>
+<div id="thm-if-unique" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 1</strong></span> An asymptotically linear estimator has a unique (a.s.) influence function.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span>Let <span class="math inline">\(\varphi, \varphi' \in \mathcal{H}\)</span> be two influence functions of an estimator <span class="math inline">\(\hat \beta_n\)</span>. Then, it holds</p>
+<p><span class="math display">\[
+\begin{aligned}
+n^{1/2} (\hat \beta_n - \beta) &amp;= n^{-1/2} \sum_{i=1}^n \varphi(Z_i) + o_p(1), \\
+n^{1/2} (\hat \beta_n - \beta) &amp;= n^{-1/2} \sum_{i=1}^n \varphi'(Z_i) + o_p(1),
+\end{aligned}
+\]</span></p>
+<p>and thus</p>
+<p><span class="math display">\[
+n^{-1/2} \sum_{i=1}^n \{\varphi(Z_i) - \varphi'(Z_i)\} = o_p(1).
+\]</span></p>
+<p>By the central limit theorem, <span class="math inline">\(n^{-1/2} \sum_{i=1}^n \{\varphi(Z_i) - \varphi'(Z_i)\} \rightsquigarrow N(0, \E[(\varphi - \varphi')(\varphi - \varphi')^\top])\)</span>. That is, <span class="math inline">\(\E[(\varphi - \varphi')(\varphi - \varphi')^\top] = 0^{q \times q}\)</span> and thus <span class="math inline">\(\varphi = \varphi'\)</span> a.s.</p>
+</div>
+<div id="exm-hodges" class="theorem example">
+<p><span class="theorem-title"><strong>Example 2 (Super-efficiency and Hodges’ Estimator)</strong></span> Let <span class="math inline">\(Z_1, \dots, Z_n \iid N(\mu, 1)\)</span>, <span class="math inline">\(\mu \in \mathbb{R}\)</span>. The maximum likelihood estimator (MLE) of <span class="math inline">\(\mu\)</span> is given by <span class="math inline">\(\bar Z_n \coloneqq n^{-1} \sum_{i=1}^n Z_i\)</span>, and we have</p>
+<p><span class="math display">\[
+n^{1/2} (\bar Z_n - \mu) \rightsquigarrow N(0, 1).
+\]</span></p>
+<p>Consider an estimator <span class="math inline">\(\hat \mu_n\)</span> defined as</p>
+<p><span class="math display">\[
+\hat \mu_n = \begin{cases}
+    \bar Z_n, &amp; |\bar Z_n| &gt; n^{-1/4} \\
+    0, &amp; |\bar Z_n| \leq n^{-1/4}
+\end{cases}.
+\]</span></p>
+<p>When <span class="math inline">\(\mu \neq 0\)</span>,</p>
+<p><span class="math display">\[
+n^{1/2}(\hat \mu_n - \mu) \rightsquigarrow N(0, 1).
+\]</span></p>
+<p>When <span class="math inline">\(\mu = 0\)</span>,</p>
+<p><span class="math display">\[
+n^{1/2}(\hat \mu_n - \mu) \rightsquigarrow N(0, 0).
+\]</span></p>
+<p>Recall that the MLE is asymptotically efficient. That is, the MLE asymptotically achieves the Cramér–Rao lower bound, in this case, the variance <span class="math inline">\(1\)</span> of <span class="math inline">\(N(0, 1)\)</span>. However, <span class="math inline">\(\hat \mu_n\)</span> has a smaller variance than <span class="math inline">\(1\)</span> when <span class="math inline">\(\mu = 0\)</span>. Such estimators are said to be <em>super-efficient</em>. Although they seem to be efficient, they have undesirable local properties (Tsiatis, 2006).</p>
+</div>
+<div id="def-regularity" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 2 (Regularity)</strong></span> Consider a local data generating process (LDGP), where, for each <span class="math inline">\(n\)</span>, the data are distributed according to <span class="math inline">\(\theta_n\)</span>, where <span class="math inline">\(n^{1/2} (\theta_n - \theta^*)\)</span> converges to a constant for some fixed parameter <span class="math inline">\(\theta^*\)</span>. That is,</p>
+<p><span class="math display">\[
+Z_{n1}, \dots, Z_{nn} \iid p(z, \theta_n),
+\]</span></p>
+<p>where</p>
+<p><span class="math display">\[
+\theta_n = (\beta_n^\top, \eta_n^\top)^\top, \quad \theta^* = ((\beta^*)^\top, (\eta^*)^\top)^\top.
+\]</span></p>
+<p>An estimator <span class="math inline">\(\hat \beta_n = \hat \beta_n(Z_{n1}, \dots, Z_{nn})\)</span> is said to be <em>regular</em> if, for each <span class="math inline">\(\theta^*\)</span>, <span class="math inline">\(n^{1/2}(\hat \beta_n - \beta_n)\)</span> has a limiting distribution that does not depend on the LDGP.</p>
 </div>
 <div class="proof remark">
-<p><span class="proof-title"><em>Remark</em>. </span>The definitions of openness or closedness in topological spaces are equivalent with ones in metric spaces.</p>
+<p><span class="proof-title"><em>Remark</em>. </span>We only consider regular and asymptotically linear (RAL) estimators in what follows.</p>
 </div>
-<div id="def-closure" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 4 (Closure)</strong></span> Let <span class="math inline">\(S\)</span> be a topological space and <span class="math inline">\(A \subset S\)</span>. The <em>closure</em> <span class="math inline">\(\overline{A}\)</span> of <span class="math inline">\(A\)</span> is the intersection of all closed subsets of <span class="math inline">\(S\)</span> containing <span class="math inline">\(A\)</span>, i.e., the smallest closed set containing <span class="math inline">\(A\)</span>.</p>
-</div>
-<div id="def-interior" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 5 (Interior)</strong></span> Let <span class="math inline">\(S\)</span> be a topological space and <span class="math inline">\(A \subset S\)</span>. The <em>interior</em> <span class="math inline">\(A^\circ\)</span> of <span class="math inline">\(A\)</span> is the union of all open subsets of <span class="math inline">\(S\)</span> contained in <span class="math inline">\(A\)</span>, i.e., the largest open set contained in <span class="math inline">\(A\)</span>.</p>
-</div>
-<div id="def-boundary" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 6 (Boundary)</strong></span> Let <span class="math inline">\(S\)</span> be a topological space and <span class="math inline">\(A \subset S\)</span>. The <em>boundary</em> <span class="math inline">\(\partial A\)</span> of <span class="math inline">\(A\)</span> is <span class="math display">\[
-\partial A = \overline A \setminus A^\circ.
-\]</span></p>
-</div>
-<div id="def-convergence" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 7 (Convergence)</strong></span> Let <span class="math inline">\((S, d)\)</span> be a metric space. A sequence <span class="math inline">\(\{x_n\}_{n \in \mathbb{N}} \subset S\)</span> <em>converges</em> to a limit <span class="math inline">\(x \in S\)</span> if for any <span class="math inline">\(\epsilon &gt; 0\)</span> there exists <span class="math inline">\(N \in \mathbb{N}\)</span> such that <span class="math display">\[
-d(x_n, x) &lt; \epsilon, \quad \forall n \geq N.
-\]</span> It is denoted as <span class="math inline">\(x_n \to x\)</span> (as <span class="math inline">\(n \to \infty\)</span>).</p>
-</div>
-<div class="proof remark">
-<p><span class="proof-title"><em>Remark</em>. </span>In a metric space, a limit is unique.</p>
-</div>
-<div id="def-cauchy" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 8 (Cauchy Sequence)</strong></span> Let <span class="math inline">\((S, d)\)</span> be a metric space. A sequence <span class="math inline">\(\{x_n\}_{n \in \mathbb{N}} \subset S\)</span> is called a <em>Cauchy sequence</em> if for any <span class="math inline">\(\epsilon &gt; 0\)</span>, there exists <span class="math inline">\(N \in \mathbb{N}\)</span> such that <span class="math display">\[
-\sup_{m, n \geq N} d(x_m, x_n) &lt; \epsilon.
-\]</span></p>
-</div>
-<div id="thm-cauchy-convergence" class="theorem">
-<p><span class="theorem-title"><strong>Theorem 2</strong></span> Let <span class="math inline">\((S, d)\)</span> be a metric space, and let <span class="math inline">\(\{x_n\} \subset S\)</span> be a sequence.</p>
-<ol type="a">
-<li>If <span class="math inline">\(\{x_n\}\)</span> converges, then <span class="math inline">\(\{x_n\}\)</span> is a Cauchy sequence.</li>
-<li>If <span class="math inline">\(\{x_n\}\)</span> is a Cauchy sequence and has a convergent subsequence, then <span class="math inline">\(\{x_n\}\)</span> converges.</li>
-</ol>
-</div>
-<div id="def-completeness" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 9 (Completeness)</strong></span> A metric space <span class="math inline">\((S, d)\)</span> is <em>complete</em> if every Cauchy sequence in <span class="math inline">\(S\)</span> converges to a point of <span class="math inline">\(S\)</span>. A subset <span class="math inline">\(E \subset S\)</span> is complete if every Cauchy sequence in <span class="math inline">\(E\)</span> converges to a point of <span class="math inline">\(E\)</span>.</p>
-</div>
-<div id="def-open-cover" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 10 (Open Cover)</strong></span> Let <span class="math inline">\(S\)</span> be a topological space and <span class="math inline">\(E \subset S\)</span>. An <em>open cover</em> of <span class="math inline">\(E\)</span> is a collection <span class="math inline">\(\{G_\alpha\}_{\alpha \in I}\)</span> of open subsets of <span class="math inline">\(S\)</span> such that <span class="math inline">\(E \subset \bigcup_{\alpha \in I} G_\alpha\)</span>. A <em>subcover</em> is a subcollection <span class="math inline">\(\{G_\alpha\}_{\alpha \in J}\)</span>, <span class="math inline">\(J \subset I\)</span>, which is still an open cover of <span class="math inline">\(E\)</span>.</p>
-</div>
-<div id="def-compactness" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 11 (Compactness)</strong></span> A topological space <span class="math inline">\(S\)</span> is <em>compact</em> if every open cover has a finite subcover. A subset <span class="math inline">\(E \subset S\)</span> is compact if every open cover of <span class="math inline">\(E\)</span> has a finite subcover.</p>
-</div>
-<div id="def-lindelof" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 12 (Lindelöf Space)</strong></span> A topological space <span class="math inline">\(S\)</span> is called a <em>Lindelöf space</em> if every open cover has a countable subcover. A subset <span class="math inline">\(E \subset S\)</span> is Lindelöf if every open cover of <span class="math inline">\(E\)</span> has a countable subcover.</p>
-</div>
-<div id="def-countable" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 13 (Countable Set)</strong></span> A set <span class="math inline">\(A\)</span> is <em>countable</em> if there exists an injective map <span class="math inline">\(f: A \to \mathbb{N}\)</span>. A set that is not countable is <em>uncountable</em>.</p>
-</div>
-<div id="def-dense" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 14 (Dense Set)</strong></span> Let <span class="math inline">\(S\)</span> be a topological space. A subset <span class="math inline">\(A \subset S\)</span> is <em>dense</em> in <span class="math inline">\(S\)</span> if, for the closure <span class="math inline">\(\overline A\)</span>, <span class="math display">\[
-\overline A = S.
-\]</span></p>
-</div>
-<div id="def-separability" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 15 (Separability)</strong></span> A topological space <span class="math inline">\(S\)</span> is <em>separable</em> if it contains a countable dense subset. A subset <span class="math inline">\(E \subset S\)</span> is separable if it contains a countable dense subset <span class="math inline">\(D \subset E\)</span>.</p>
-</div>
-<div id="thm-closed-subset" class="theorem">
-<p><span class="theorem-title"><strong>Theorem 3</strong></span> Let <span class="math inline">\(S\)</span> be a topological space. Then, the following hold.</p>
-<ol type="a">
-<li>If <span class="math inline">\(S\)</span> is a compact space, then a closed subset <span class="math inline">\(E \subset S\)</span> is compact.</li>
-<li>If <span class="math inline">\(S\)</span> is a Lindelöf space, then a closed subset <span class="math inline">\(E \subset S\)</span> is Lindelöf.</li>
-</ol>
-</div>
-<div id="thm-separable-lindelof" class="theorem">
-<p><span class="theorem-title"><strong>Theorem 4</strong></span> Let <span class="math inline">\(S\)</span> be a metric space. Then, <span class="math inline">\(S\)</span> is separable if and only if <span class="math inline">\(S\)</span> is Lindelöf.</p>
-</div>
-<div id="def-boundedness" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 16 (Boundedness)</strong></span> Let <span class="math inline">\((S, d)\)</span> be a metric space. A subset <span class="math inline">\(E \subset S\)</span> is <em>bounded</em> if there exists <span class="math inline">\(r &gt; 0\)</span> such that <span class="math display">\[
-d(x, y) &lt; r, \quad \forall x, y \in E.
-\]</span></p>
-</div>
-<div id="def-total-boundedness" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 17 (Total Boundedness)</strong></span> Let <span class="math inline">\((S, d)\)</span> be a metric space. A subset <span class="math inline">\(E \subset S\)</span> is <em>totally bounded</em> if, for any <span class="math inline">\(\epsilon &gt; 0\)</span>, there exist finitely many points <span class="math inline">\(x_1, \dots, x_n \in E\)</span> such that <span class="math display">\[
-E \subset \bigcup_{i=1}^n B_\epsilon(x_i),
-\]</span> where <span class="math inline">\(B_\epsilon(x_i) = \{x \in S: d(x_i, x) &lt; \epsilon\}\)</span>.</p>
-</div>
-<div id="thm-totally-bounded" class="theorem">
-<p><span class="theorem-title"><strong>Theorem 5</strong></span> Every totally bounded set is bounded. The converse is not necessarily true.</p>
-</div>
-<div id="def-sequential-compactness" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 18 (Sequential Compactness)</strong></span> Let <span class="math inline">\(S\)</span> be a topological space. A subset <span class="math inline">\(E \subset S\)</span> is <em>sequentially compact</em> if every sequence in <span class="math inline">\(E\)</span> has a convergent subsequence in <span class="math inline">\(E\)</span>.</p>
-</div>
-<div id="thm-heine-borel" class="theorem">
-<p><span class="theorem-title"><strong>Theorem 6 (Heine-Borel Theorem)</strong></span> For a set <span class="math inline">\(E\)</span> in the Euclidean space <span class="math inline">\(\mathbb{R}^k\)</span>, the following are equivalent.</p>
-<ol type="a">
-<li><span class="math inline">\(E\)</span> is compact.</li>
-<li><span class="math inline">\(E\)</span> is closed and bounded.</li>
-</ol>
-</div>
-<div id="thm-generalized-heine-borel" class="theorem">
-<p><span class="theorem-title"><strong>Theorem 7 (Generalized Heine-Borel Theorem)</strong></span> For a set <span class="math inline">\(E\)</span> in a metric space <span class="math inline">\(S\)</span>, the following are equivalent.</p>
-<ol type="a">
-<li><span class="math inline">\(E\)</span> is compact.</li>
-<li><span class="math inline">\(E\)</span> is sequentially compact.</li>
-<li><span class="math inline">\(E\)</span> is complete and totally bounded.</li>
-</ol>
-</div>
-<div id="def-polish" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 19 (Polish Space)</strong></span> A <em>Polish space</em> is a topological space that is separable and metrizable in such a way that it becomes complete.</p>
-</div>
-<div class="proof remark">
-<p><span class="proof-title"><em>Remark</em>. </span>More explicitly, a topological space <span class="math inline">\((S, \mathcal{T})\)</span> is called <em>Polish</em> if <span class="math inline">\((S,\mathcal{T})\)</span> is separable and there exists a metric <span class="math inline">\(d\)</span> on <span class="math inline">\(S\)</span> such that <span class="math inline">\(\mathcal{T}\)</span> is the topology induced by <span class="math inline">\(d\)</span> and <span class="math inline">\((S, d)\)</span> is complete.</p>
-</div>
-<section id="references" class="level3">
-<h3 class="anchored" data-anchor-id="references">References</h3>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
 <ul>
-<li>Rudin, W. (1976). Principles of Mathematical Analysis (3rd ed.). McGraw-Hill.</li>
-<li>…</li>
+<li>Tsiatis, A. A. (2006). <em>Semiparametric Theory and Missing Data</em>. Springer.</li>
 </ul>
 
 
